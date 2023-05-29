@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://<username>.github.io/portfolio-react/",
+  "homepage": "https://kamiviolet.github.io/portfolio-react/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
