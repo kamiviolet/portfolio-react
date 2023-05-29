@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: inherit;
+    max-width: 1000px;
+    height: 40vh;
+
+    margin-block: 3rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: lightgray;
+    letter-spacing: 2.5px;
+    padding-inline: 2rem;
+}
+
+span {
+    display: block;
+}
+
+.header .name {
+    font-size: 2em;
+    margin-block: 1rem;
+    color: #FFA500;
+}
+
+.title {
+    text-transform: uppercase; 
+    color: #5FCEBF;
+}
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        margin-block: 1rem;
+    }
+
+    .header .name {
+        font-size: 2.5em;
+    }
+}

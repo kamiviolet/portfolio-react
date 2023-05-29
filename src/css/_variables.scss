@@ -1,0 +1,52 @@
+@use "sass:math";
+
+// colors
+$color-primary-0: #0E3767;
+$color-primary-1: #5093E3;
+$color-primary-2: #729BD4;
+$color-primary-3: #aa2abb;
+$color-information: #5FCEBF;
+$color-highlight: #FFA500;
+$black: #000000;
+$white: #f0f0f0;
+$gray: #bbbbbb;
+
+
+// font
+$font-stack-1: 'Share Tech Mono', monospace;
+$font-stack-2: 'Nunito Sans', sans-serif;
+$font-stack-4: 'Arial narrow', sans-serif;
+
+$base-font-size: 1rem;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2.5;
+$font-size-xxl: $base-font-size * 4;
+
+// alignment
+$base-margin: 1rem;
+$margin-lg: $base-margin * 2;
+$margin-xl: $base-margin * 3;
+$margin-xxl: $base-margin * 5;
+
+$base-padding: 1rem;
+$padding-s: $base-padding * 0.75;
+$padding-lg: $base-padding * 2;
+
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 5%;
+$border-radius-lg: $base-border-radius * 2;
+
+
+
+
+@mixin flex($direction: row, $halign: center, $valign: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $halign;
+  align-items: $valign;
+}
+
+//make themes
+//make foreach in sass

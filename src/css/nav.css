@@ -1,0 +1,96 @@
+.navbar {
+  width: inherit;
+  padding: 0.5rem 2rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0;
+}
+
+.menu_wrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  z-index: 3;
+  text-align: center;
+  overflow-y: auto;
+}
+.menu_wrapper li {
+  width: inherit;
+}
+.menu_wrapper li .menu_link {
+  display: block;
+  background-color: inherit;
+  padding: 1rem;
+  font-family: "Share Tech Mono", monospace;
+}
+.menu_wrapper li .menu_link:hover {
+  background-color: #FFA500;
+}
+.menu_wrapper li .menu_link:focus {
+  background-color: #FFA500;
+}
+.menu_wrapper li .menu_link .menu_icon {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .navbar {
+    width: 100%;
+    position: initial;
+    top: auto;
+    padding-block: 1rem;
+  }
+  .navbar .menu_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: initial;
+    height: -moz-min-content;
+    height: min-content;
+    background-color: transparent;
+  }
+  .navbar .menu_wrapper li {
+    width: 10%;
+    max-width: 110px;
+    margin-inline: 1rem;
+  }
+  .navbar .menu_wrapper li .menu_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: initial;
+    fill: #bbbbbb;
+  }
+  .navbar .menu_wrapper li .menu_link:hover {
+    fill: #aa2abb;
+    background-color: transparent;
+  }
+  .navbar .menu_wrapper li .menu_link:focus {
+    fill: #aa2abb;
+    background-color: transparent;
+  }
+  .navbar .menu_wrapper li .menu_link p {
+    color: inherit;
+  }
+  .navbar .menu_wrapper li .menu_link .menu_icon {
+    display: block;
+    width: 45px;
+    height: 45px;
+  }
+}/*# sourceMappingURL=nav.css.map */

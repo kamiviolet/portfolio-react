@@ -1,0 +1,39 @@
+.menu_btn {
+    margin-block: 1.5rem;
+    width: 45px;
+    height: 45px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: white;
+    border-radius: 2px;
+    width: 100%;
+
+    height: 5px;
+    margin-top: 15px;
+    transition: 300ms;
+}
+
+.bar:first-of-type {
+    margin-top: 0;
+}
+
+.open .bar:nth-of-type(2)  {
+    display: none;
+}
+
+.open .bar:nth-of-type(1)  {
+    transform: translate(0, 25px) rotate(45deg);
+}
+
+.open .bar:nth-of-type(3)  {
+    transform: translate(0, 5px) rotate(-45deg);
+}
+
+@media only screen and (min-width: 1000px) {
+    .menu_btn {
+        display: none;
+    }
+}

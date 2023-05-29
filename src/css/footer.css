@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  
+    text-align: center;
+    color: white;
+    padding-block: 2rem;
+
+    font-size: 1.25em;
+    font-family: 'Nunito Sans', sans-serif;
+  }

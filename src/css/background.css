@@ -1,0 +1,40 @@
+.sky {
+    position: fixed;
+    transform: translateZ(-400px);
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: sparkling infinite;
+  }
+  
+  .dark {
+    background: linear-gradient(to bottom, black 75%, #0E3767);
+  }
+  
+  .bright {
+    background: linear-gradient(to bottom, #729BD4 75%, #bbbbbb);
+  }
+  
+  
+  @keyframes sparkling {
+    0% {
+      opacity: 0;
+      box-shadow: black 0 0 0;
+    }
+    50% {
+      opacity: 1;
+      box-shadow: white 0 0 10px;
+    }
+    100% {
+      opacity: 0;
+      box-shadow: black 0 0 0;
+    }
+  }
