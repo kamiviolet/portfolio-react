@@ -12,28 +12,28 @@ import './css/index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio-react",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "/portfolio-react",
         element: <Home />
       },
       {
-        path: "/about",
+        path: "/portfolio-react/about",
         element: <About />
       },
       {
-        path: "/contact",
+        path: "/portfolio-react/contact",
         element: <Contact />
       },
       {
-        path: "/skills",
+        path: "/portfolio-react/skills",
         element: <Skills />
       },
       {
-        path: "/projects",
+        path: "/portfolio-react/projects",
         element: <Projects />
       },
     ]
