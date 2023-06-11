@@ -1,0 +1,20 @@
+.intro_images {
+    width: 100%;
+    max-width: 450px;
+    padding: 1.2em .6em;
+    margin: 0.6em auto;
+    background-color: white;
+    color: #000;
+    border-radius: 10px
+}
+
+.intro_images img {
+    width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+    .intro_images {
+        float: right;
+        margin: .6em .3em;
+    }
+}
