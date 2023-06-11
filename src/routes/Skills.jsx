@@ -9,55 +9,55 @@ export default function Skills() {
         },
         {
             name: "CSS",
-            path: 'public/devicons/css3-original.svg'
+            path: '/devicons/css3-original.svg'
         },
         {
             name: "SASS",
-            path: 'public/devicons/sass-original.svg',
+            path: '/devicons/sass-original.svg',
         },
         {
             name: "JavaScript",
-            path: 'public/devicons/javascript-original.svg',
+            path: '/devicons/javascript-original.svg',
         },
         {
             name: "React",
-            path: 'public/devicons/react-original.svg'
+            path: '/devicons/react-original.svg'
         },
         {
             name: "TypeScript",
-            path: 'public/devicons/typescript-original.svg'
+            path: '/devicons/typescript-original.svg'
         },
         {
             name: "Nodejs",
-            path: 'public/devicons/nodejs-original.svg'
+            path: '/devicons/nodejs-original.svg'
         },
         {
             name: "Express",
-            path: 'public/devicons/express-original.svg'
+            path: '/devicons/express-original.svg'
         },
         {
             name: "npm",
-            path: 'public/devicons/npm-original-wordmark.svg'
+            path: '/devicons/npm-original-wordmark.svg'
         },
         {
             name: "jest",
-            path: 'public/devicons/jest-plain.svg'
+            path: '/devicons/jest-plain.svg'
         },
         {
             name: "mocha",
-            path: 'public/devicons/mocha-plain.svg'
+            path: '/devicons/mocha-plain.svg'
         },
         {
             name: "PostgreSQL",
-            path: 'public/devicons/postgresql-plain.svg'
+            path: '/devicons/postgresql-plain.svg'
         },
         {
             name: "Firebase",
-            path: 'public/devicons/firebase-plain.svg'
+            path: '/devicons/firebase-plain.svg'
         },
         {
             name: "Git",
-            path: 'public/devicons/git-original.svg'
+            path: '/devicons/git-original.svg'
         },
     ];
 
