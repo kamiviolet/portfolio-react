@@ -42,6 +42,11 @@
   display: none;
 }
 
+.menu_icon svg{
+  width: 70%;
+  height: 70%;
+}
+
 .hidden {
   display: none;
 }
