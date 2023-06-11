@@ -16,5 +16,6 @@ footer img {
   display: inline-block;
   width: 30px;
   height: 30px;
-  transform: translateY(7.5px);
+  transform: translateY(7px);
+  margin-inline: .25em;
 }
