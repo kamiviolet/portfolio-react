@@ -2,16 +2,16 @@
     min-height: 100px;
     width: 100%;
     max-width: 750px;
-    border-radius: 10px;
     margin: 0 auto;
     display: grid;
     justify-content: center;
+    gap: 1rem;
 }
 
-.project_container img {
-    width: 100%;
-    max-width: 450px;
+.project_container > * {
     background-color: white;
+    border-radius: 10px;
+
 }
 
 @media screen and (min-width: 750px) {
@@ -19,7 +19,4 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .project_container img {
-        grid-column: 2/3;
-    }
 }

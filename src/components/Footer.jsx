@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer>
             <p>Created and designed by Kami Lam, 2023</p>
-            <p className="disclaimer">All icons used on this website are from 
+            <p>All icons used on this website are from 
             <img src="/devicons/devicon-original.svg" alt="devicon" />DEVICON and 
             <img src="/devicons/bootstrap-plain.svg" alt="bootstrap" />Bootstrap
             </p>

@@ -22,8 +22,13 @@
     padding: .75em;
     border-radius: 5px;
     cursor: pointer;
+    opacity: .85;
 }
 
+.icons img:hover {
+    transform: scale(110%);
+    opacity: 1;
+}
 
 @media screen and (min-width: 1000px) {
     .skills {
