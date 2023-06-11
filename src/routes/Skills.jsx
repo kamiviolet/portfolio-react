@@ -67,10 +67,10 @@ export default function Skills() {
                 <h2>Skills</h2>
                 <div className="description">
                     <p>
-                    My core tech skill include HTML, CSS, JavaScript, with knowledge about several frameworks including Sass, Express, React, React Native and TypeScript. I am adapted to Agile methodologies, implementing Test-Driven-Development to conduct both unit & integration test with Jest/Mocha. I personally prefer SQL language but as different project may require different approach, I am also equipped with No-SQL experience, for example Firestore (Firebase).
+                    My core skill set includes HTML, CSS and JavaScript, with knowledge about several frameworks including Sass, Express, React, React Native and TypeScript. I am adapted to Agile methodologies, implementing Test-Driven-Development to conduct both unit & integration test with Jest/Mocha. For database, I prefer SQL language but as different project requires different approach, I am also equipped with some No-SQL experience, for example Firestore in Firebase.
                     </p>
                     <p>
-                    I am also learning C (yeah, that "C") in my pastime and I really like it.
+                    I am planning to dig deeper the potentiality of the above-mentioned technologies but also interested in exploring new tools. Currently, I am also learning C (yeah, that "C") in my pastime and I really like it.
                     </p>
                 </div>
                 <div className="icons">
