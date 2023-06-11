@@ -59,6 +59,10 @@ export default function Skills() {
             name: "Git",
             path: '/devicons/git-original.svg'
         },
+        {
+            name: "Trello",
+            path: '/devicons/trello-plain.svg'
+        },
     ];
 
     return (
