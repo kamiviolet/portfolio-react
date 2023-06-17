@@ -7,8 +7,6 @@
 }
 
 .icons {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 110px);
     color: black;
     align-self: first baseline;
 }

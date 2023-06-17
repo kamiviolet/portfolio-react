@@ -29,7 +29,7 @@ span {
     color: #5FCEBF;
 }
 
-.header [role="description"] {
+.header > [role="description"] {
     display: grid;
     align-self: center;
 }
