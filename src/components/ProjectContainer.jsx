@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import SKILLS from '../constants/Skills'
 import {v4} from 'uuid'
 
 export default function ProjectContainer({project}) {
+    const navigate = useNavigate();
     const tools = 
          project.tools.split(', ')
                 .map(t => {
@@ -24,8 +26,8 @@ export default function ProjectContainer({project}) {
                     }
                 </div>
                 <div className="btn_wrapper">
-                    <button>Live demo</button>
-                    <button>Code</button>
+                    <button onClick={()=>navigate(project.demo)}>Live demo</button>
+                    <button onClick={()=>navigate(project.github)}>Code</button>
                 </div>
             </div>
             <div className="project image">

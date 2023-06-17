@@ -1,35 +1,7 @@
 import { Link } from "react-router-dom";
-import { BsFillHouseDoorFill, BsFillPersonBadgeFill, BsFillPaletteFill, BsJournalCode, BsFillRocketFill, BsChatLeftText } from "react-icons/bs";
+import CATEGORIES from "../constants/Categories";
 
 export default function MenuWrapper() {
-    const CATEGORIES = [
-        {
-          target: "home", 
-          link: "",
-          svg: <BsFillHouseDoorFill />
-        },
-        {
-          target: "about", 
-          link: "about",
-          svg: <BsFillPersonBadgeFill />,
-        },
-        {
-          target: "skills", 
-          link: "skills",
-          svg: <BsJournalCode />
-        },
-        {
-          target: "projects", 
-          link: "projects",
-          svg: <BsFillRocketFill />,
-        },
-        {
-          target: "contact", 
-          link: "contact",
-          svg: <BsChatLeftText />,
-        },
-      ];
-
       return (
         <ul className="menu_wrapper hidden">
             {CATEGORIES.map(elem => {
