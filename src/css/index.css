@@ -19,12 +19,38 @@ body {
     place-items: center;
     width: 100vw;
     min-height: 100vh;
-    /* mask-image: linear-gradient(black, transparent);
-    mask-mode: alpha;
-    mask-position: bottom;
-    mask-clip: content-box;
-    mask-origin: fill-box;
-    mask-repeat: no-repeat; */
+}
+
+.light ~ main > section,
+.light ~ footer,
+.light ~ nav > .menu_wrapper li a,
+.light ~ header {
+    color: black;
+}
+
+.light ~ nav {
+    background-color: #69a7f3;
+}
+
+.light ~ nav > .menu_wrapper {
+    background-color: inherit;
+}
+
+.light ~ nav > .menu_wrapper li a:hover {
+    color: #c4500d;
+}
+
+.light ~ main > section h2,
+.light ~ header .name {
+    color: #0f427c;
+}
+
+.light ~ header .title {
+    color: #107465
+}
+
+.light ~ main > section strong {
+    color: #c4500d;
 }
 
 main {
@@ -36,6 +62,11 @@ main {
     width: inherit;
     font-weight: 500;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 0;
+    margin-block: .5em;
 }
 
 h2 {

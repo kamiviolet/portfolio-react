@@ -1,15 +1,8 @@
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import SKILLS from '../constants/Skills'
-import {v4} from 'uuid'
+import { v4 } from 'uuid'
 
 export default function ProjectContainer({project}) {
-    const navigate = useNavigate();
-    const tools = 
-         project.tools.split(', ')
-                .map(t => {
-                    return SKILLS.find(s => s.name === t)
-                })
-
     return (
         <div className="project_container">
             <div className="project details">
@@ -18,16 +11,16 @@ export default function ProjectContainer({project}) {
                 <span role="key">Tools:</span>
                 <div role="value">
                     {
-                        tools.map(t => {
-                            return t
-                            ? <img src={t.path} className='icon' alt={t.name} key={v4()} />
-                            : <></>
+                        project.tools.split(', ')
+                        .map(t => {
+                            return SKILLS.find(s => s.name === t)
                         })
+                        .map(t => <img src={t.path} className='icon' alt={t.name} key={v4()} />)
                     }
                 </div>
                 <div className="btn_wrapper">
-                    <button onClick={()=>navigate(project.demo)}>Live demo</button>
-                    <button onClick={()=>navigate(project.github)}>Code</button>
+                    <Link to={project.url.demo} target='_blank'>Live demo</Link >
+                    <Link to={project.url.github} target='_blank'>Code</Link>
                 </div>
             </div>
             <div className="project image">

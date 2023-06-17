@@ -17,11 +17,11 @@
   }
   
   .dark {
-    background: linear-gradient(to bottom, black 75%, #0E3767);
+    background: linear-gradient(to bottom,  black 35%, #2c014e  55%, #0E3767);
   }
   
-  .bright {
-    background: linear-gradient(to bottom, #729BD4 75%, #bbbbbb);
+  .light {
+    background: linear-gradient(to bottom, #69a7f3 25%, #a2c2f0  80%, rgb(214, 223, 248));
   }
   
   

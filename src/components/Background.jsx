@@ -1,8 +1,19 @@
 import '../css/background.css'
+import { useContext,useEffect } from 'react'
+import { ThemeContext } from '../contexts/ThemeContext'
 
 export default function Background() {
+    const {theme, setTheme} = useContext(ThemeContext)
+
+    useEffect(()=> {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            setTheme(storedTheme)
+        }    
+    }, [])
+
     return (
-        <div className='sky dark'>
+        <div className={"sky "+ theme}>
             {[...Array(200)].map((star, i) => {
                 let style = {
                     left: Math.floor(Math.random() * 100) + '%', 

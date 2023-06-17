@@ -1,4 +1,6 @@
 .navbar {
+  grid-row: 1/2;
+  justify-self: last baseline;
   width: inherit;
   display: flex;
   flex-direction: row;
@@ -39,6 +41,13 @@
 }
 .menu_wrapper li .menu_link .menu_icon {
   display: none;
+}
+
+.theme_toggler {
+  border-radius: 50%;
+  border: 0;
+  margin-top: 2em;
+  margin-inline: 0;
 }
 
 .hidden {
@@ -92,5 +101,9 @@
     width: 45px;
     height: 45px;
     font-size: 1.75em;
+  }
+  .theme_toggler {
+    margin-top: 0;
+    transform: translateY(-1em);
   }
 }/*# sourceMappingURL=nav.css.map */

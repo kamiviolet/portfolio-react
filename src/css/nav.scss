@@ -2,6 +2,7 @@
 
 .navbar {
   grid-row: 1/2;
+  justify-self: last baseline;
   width: inherit;
   @include flex($halign: flex-end);
   top: 0;
@@ -9,7 +10,7 @@
 
 .menu_wrapper {
   position: fixed;
-  @include flex($direction: column);
+  @include flex($direction: column, $valign: center);
 
   top: 0;
   left: 0;
@@ -43,6 +44,13 @@
         }
       }
     }
+}
+
+.theme_toggler {
+  border-radius: 50%;
+  border: 0;
+  margin-top: 2em;
+  margin-inline: 0;
 }
 
 .hidden {
@@ -96,8 +104,14 @@
               font-size: 1.75em;
 
             }
+            
           }
         }
       }
+    }
+    .theme_toggler {
+
+      margin-top: 0;
+      transform: translateY(-1em);
     }
   }

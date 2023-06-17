@@ -1,10 +1,8 @@
 .project_container {
-    min-height: 300px;
     width: 100%;
     margin-block: 200px auto;
     display: grid;
     justify-content: center;
-    gap: 2.5rem;
 }
 
 .project_container:first-of-type {
@@ -12,17 +10,18 @@
 }
 
 .project_container > .details {
+    min-height: 400px;
     display: grid; 
-    border-radius: 25px 0 25px 0;
     background-color: white;
     color: black;
-    box-shadow: #729BD4 10px 10px 0;
     padding: 2em 1em;
     opacity: .9;
 }
 
 .details h3 {
     font-size: 1.75em;
+    font-family:'Nunito Sans', sans-serif;
+
 }
 
 .details .icon {
@@ -34,7 +33,7 @@
 .details [role="value"],
 .details [role="key"]{
     font-size: 1.25em;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Nunito Sans', sans-serif;
     margin-block-end: unset;
     line-height: normal;
     letter-spacing: normal;
@@ -62,9 +61,23 @@
 .btn_wrapper {
     padding-block-start: 1.25em;
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     display: flex;
     justify-content: space-between;
+}
+
+.btn_wrapper a {
+    background-color: #5FCEBF;
+    color: black;
+    padding-inline: 2em;
+    padding-block: 1em;
+    height: 50px;
+}
+
+.btn_wrapper a:hover, 
+.btn_wrapper a:focus {
+    background-color: #FFA500;
+    color: black;
 }
 
 @media screen and (min-width: 750px) {
