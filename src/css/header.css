@@ -18,7 +18,7 @@ span {
 }
 
 .header .name {
-    font-size: 1.75em;
+    font-size: 1.25em;
     margin-block: .25em;
     color: #729BD4;
     font-family: 'Nunito Sans', sans-serif;
@@ -37,7 +37,7 @@ span {
 .header img {
     justify-self: center;
     width: 100%;
-    width: 350px;
+    max-width: 500px;
     margin-block: 2em;
 }
 
@@ -50,6 +50,10 @@ span {
     .header [role='description'] {
         grid-column: 1/ span 2;
     }
+
+    .header .name {
+        font-size: 2em;
+    }   
 
     img {
         grid-column: 3/4;
