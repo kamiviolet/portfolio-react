@@ -45,6 +45,7 @@
 
 .thumbnail {
     object-fit: cover;  
+    image-rendering: optimizeSpeed;
 }
 
 .web_thumbnail {
