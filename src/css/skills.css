@@ -32,7 +32,7 @@
 
 @media screen and (min-width: 1000px) {
     .skills {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 575px auto;
         gap: 2em;
     }
     .skills h2 {

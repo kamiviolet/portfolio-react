@@ -1,4 +1,5 @@
 .sky {
+  grid-row: 1/4;
     position: fixed;
     transform: translateZ(-400px);
     top: 0;

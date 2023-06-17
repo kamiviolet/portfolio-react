@@ -1,80 +1,19 @@
 import {v4} from 'uuid'
 import "../css/skills.css"
+import SKILLS from '../constants/Skills'
 
 export default function Skills() {
-    const SKILLS = [
-        {
-            name: "HTML",
-            path: '/devicons/html5-original.svg',
-        },
-        {
-            name: "CSS",
-            path: '/devicons/css3-original.svg'
-        },
-        {
-            name: "SASS",
-            path: '/devicons/sass-original.svg',
-        },
-        {
-            name: "JavaScript",
-            path: '/devicons/javascript-original.svg',
-        },
-        {
-            name: "React",
-            path: '/devicons/react-original.svg'
-        },
-        {
-            name: "TypeScript",
-            path: '/devicons/typescript-original.svg'
-        },
-        {
-            name: "Nodejs",
-            path: '/devicons/nodejs-original.svg'
-        },
-        {
-            name: "Express",
-            path: '/devicons/express-original.svg'
-        },
-        {
-            name: "npm",
-            path: '/devicons/npm-original-wordmark.svg'
-        },
-        {
-            name: "jest",
-            path: '/devicons/jest-plain.svg'
-        },
-        {
-            name: "mocha",
-            path: '/devicons/mocha-plain.svg'
-        },
-        {
-            name: "PostgreSQL",
-            path: '/devicons/postgresql-plain.svg'
-        },
-        {
-            name: "Firebase",
-            path: '/devicons/firebase-plain.svg'
-        },
-        {
-            name: "Git",
-            path: '/devicons/git-original.svg'
-        },
-        {
-            name: "Trello",
-            path: '/devicons/trello-plain.svg'
-        },
-    ];
-
     return (
         <main>
             <section className="skills">
                 <h2>Skills</h2>
                 <div className="description">
                     <p>
-                    My core skill set includes HTML, CSS and JavaScript, with knowledge about several frameworks including Sass, Express, React, React Native and TypeScript. I am adapted to Agile methodologies, implementing Test-Driven-Development to conduct both unit & integration test with Jest/Mocha. For database, I prefer SQL language but as different project requires different approach, I am also equipped with some No-SQL experience, for example Firestore in Firebase.
+                    My core skill set includes <strong>HTML, CSS and JavaScript</strong>, with knowledge about several frameworks including <strong>Sass, Express, React, React Native, Vite and Expo</strong>. I am adapted to <strong>Agile methodologies</strong>, implementing Test-Driven-Development to conduct both unit & integration test with <strong>Jest/Mocha</strong>. For database, I use <strong>PostgreSQL</strong> but as different project requires different approach, I am also equipped with some No-SQL experience, for example Firestore in <strong>Firebase</strong>.
                     </p>
+                    <p>Aside from that, I also have experience with <strong>Inkscape</strong> and creating SVGs.</p>
                     <p>
-                    I am planning to dig deeper the potentiality of the above-mentioned technologies but also interested in exploring new tools. Currently, I am also learning C (yeah, that "C") in my pastime and I really like it.
+                    I am planning to dig deeper the potentiality of the above-mentioned technologies but also interested in exploring new tools. Currently, I am also learning <strong>C</strong> (yeah, that "C") and <strong>Bash</strong> in my pastime as my interest. Although I am not good in them yet, I really enjoy learning them.
                     </p>
                 </div>
                 <div className="icons">

@@ -2,13 +2,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    grid-row: 2/3;
     width: inherit;
-    max-width: 1000px;
-    height: 40vh;
+    max-width: 1200px;
+    height: 30vh;
+    max-height: 500px;
+    font-size: 1.5em;
 
-    margin-block: 2.5rem;
-    font-family: 'Nunito Sans', sans-serif;
+    margin-block: 2em;
+    font-weight: 800;
     color: lightgray;
     letter-spacing: 2.5px;
     padding-inline: 2rem;
@@ -19,9 +21,9 @@ span {
 }
 
 .header .name {
-    font-size: 2em;
-    margin-block: 1rem;
-    color: #FFA500;
+    font-size: 1.75em;
+    margin-block: .25em;
+    color: #729BD4;
 }
 
 .title {
@@ -33,9 +35,5 @@ span {
     .header {
         padding-block-start: 2rem;
         max-height: 400px
-    }
-
-    .header .name {
-        font-size: 2.5em;
     }
 }

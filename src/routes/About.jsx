@@ -4,7 +4,7 @@ import Carousel from "../components/Carousel"
 export default function About() {
     return (
         <main role="about_page">
-            <section className="about">
+            <section className="background">
                 <h2>Background</h2>
                 <p>
                     Being one of the nerds at school, I have been always grateful for the existence of computer and the internet, that I could access to information. I liked to explore materials to learn various softwares without waiting for my computer teacher to introduce to us. In early 2000s, I hosted my first homepage in Geocities JP. It was fun to think of various themes and designs to put on my homepage back then.
@@ -20,6 +20,8 @@ export default function About() {
                 <p>
                     In 2021 summer, thanks to a friend, I hesitantly decided to resume my exploration to technology through freeCodeCamp. Deeper I digged into it, more amazed by the drastic changes over these years. After almost a year of self taught journey, here I am, I joined my coding bootcamp offered by Northcoders to learn with other peers and mentors.
                 </p>
+            </section>
+            <section className="Vision">
                 <h2>Vision</h2>
                 <p>
                     Humanity can get this far because we learnt from experience and pass our knowledge around and to next generation (to certain degree). Despite my long pause in technology, I gained various experience in my life and I believe I must be able to apply it into programming.
