@@ -1,15 +1,12 @@
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     grid-row: 2/3;
+    display: grid;
     width: inherit;
     max-width: 1200px;
-    height: 30vh;
-    max-height: 500px;
     font-size: 1.5em;
 
-    margin-block: 2em;
+    align-content: center;
+    gap: 2em;
     font-weight: 800;
     color: lightgray;
     letter-spacing: 2.5px;
@@ -32,9 +29,29 @@ span {
     color: #5FCEBF;
 }
 
+.header [role="description"] {
+    display: grid;
+    align-self: center;
+}
+
+.header img {
+    justify-self: center;
+    width: 100%;
+    width: 350px;
+    margin-block: 2em;
+}
+
 @media only screen and (min-width: 1000px) {
     .header {
         padding-block-start: 2rem;
-        max-height: 400px
+        grid-template-columns: minmax(auto, 500px) auto;
+    }
+
+    .header [role='description'] {
+        grid-column: 1/ span 2;
+    }
+
+    img {
+        grid-column: 3/4;
     }
 }
