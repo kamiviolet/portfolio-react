@@ -14,7 +14,7 @@ export default function Background() {
 
     return (
         <div className={"sky "+ theme}>
-            {[...Array(200)].map((star, i) => {
+            {[...Array(150)].map((star, i) => {
                 let style = {
                     left: Math.floor(Math.random() * 100) + '%', 
                     top: Math.floor(Math.random() * 100) + '%',

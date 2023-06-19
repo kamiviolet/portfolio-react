@@ -3,13 +3,12 @@
     display: grid;
     width: inherit;
     max-width: 1200px;
-    font-size: 1.5em;
+    font-size: 1.55em;
+    font-family: 'Nunito Sans', sans-serif;
 
     align-content: center;
     gap: 2em;
-    font-weight: 800;
     color: lightgray;
-    letter-spacing: 2.5px;
     padding-inline: 2rem;
 }
 
@@ -18,27 +17,70 @@ span {
 }
 
 .header .name {
-    font-size: 1.25em;
-    margin-block: .25em;
+    margin-block: .15em;
     color: #729BD4;
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 .title {
     text-transform: uppercase; 
+    letter-spacing: .15em;
     color: #5FCEBF;
+    font-weight: 800;
 }
 
 .header > [role="description"] {
     display: grid;
     align-self: center;
+    line-height: 1.5;
+}
+
+.header p {
+    margin-block: 1.75em;
+    font-size: .75em;
 }
 
 .header img {
     justify-self: center;
     width: 100%;
     max-width: 500px;
-    margin-block: 2em;
+}
+
+.self-intro p {
+    line-height: 1.25;
+    font-size: 1.15em;
+}
+
+.self-intro .icons_wrapper {
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.self-intro .icons {
+    height: inherit;
+    width: inherit;
+    display: flex;
+}
+
+.self-intro .left,
+.self-intro .right {
+    display: block;
+    position: absolute;
+    font-size: 2em;
+    z-index: 5;
+    height: 100%;
+    background-color: #729bd4b4;
+    color: black;
+    cursor: pointer;
+}
+
+.self-intro .left {
+    left: 0
+}
+
+.self-intro .right {
+    right: 0;
 }
 
 @media only screen and (min-width: 1000px) {

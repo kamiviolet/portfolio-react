@@ -1,9 +1,20 @@
-import {ThemeContext} from '../contexts/ThemeContext'
-import { useContext } from 'react'
+import { ThemeContext } from '../contexts/ThemeContext'
+import { Component, useContext, useRef } from 'react'
+import {v4} from 'uuid'
+import SKILLS from '../constants/Skills'
 import '../css/header.css'
+import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
 
 export default function Home() {
     const {theme, setTheme} = useContext(ThemeContext)
+    const sliderRef = useRef(null);
+
+    const slidingLeft = (component) => {
+        console.log(component)
+    }
+    const slidingRight = (component) => {
+        console.log(component)
+    }
 
     return (
         <>
@@ -14,15 +25,25 @@ export default function Home() {
                     <span className="name">Kami Lam</span>
                 </h1>
                 <span className="title">JavaScript Developer</span>
+
             </div>
-            <img src="/undraw_programmer_re_owql.svg"/> 
         </header>
 
         <main>
             <section className="self-intro">
             <p>
-                I build things on the web with JavaScript and also make SVGs for fun. 
+                I build things on the web with JavaScript, and hopefully, not just things but things that can help people to connect with each other, to help them to have a more comfortable life.
             </p>
+            <p>
+                My current skill set includes:
+            </p>
+            <div className="icons_wrapper">
+                <BsFillCaretLeftFill className='left' onMouseOver={()=>slidingLeft(sliderRef)}/>
+                <BsFillCaretRightFill className='right' onMouseOver={()=>slidingRight(sliderRef)}/>
+                <div className="icons" ref={sliderRef}>
+                    {SKILLS.map(s => <img key={v4()} src={s.path} alt={s.name} />)}
+                </div>
+            </div>
             </section>
         </main>
         </>
