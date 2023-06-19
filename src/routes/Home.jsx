@@ -1,5 +1,5 @@
 import { ThemeContext } from '../contexts/ThemeContext'
-import { Component, useContext, useRef } from 'react'
+import { Component, useContext, useEffect, useState, useRef } from 'react'
 import {v4} from 'uuid'
 import SKILLS from '../constants/Skills'
 import '../css/header.css'
@@ -8,12 +8,14 @@ import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
 export default function Home() {
     const {theme, setTheme} = useContext(ThemeContext)
     const sliderRef = useRef(null);
-
-    const slidingLeft = (component) => {
-        console.log(component)
+    const [offsetX, setOffsetX] = useState(0);
+      
+    const slidingLeft = ({current}) => {
+        console.log(current.offsetWidth)
+        console.log(current.scrollWidth)
     }
-    const slidingRight = (component) => {
-        console.log(component)
+    const slidingRight = ({current}) => {
+        
     }
 
     return (
@@ -40,7 +42,10 @@ export default function Home() {
             <div className="icons_wrapper">
                 <BsFillCaretLeftFill className='left' onMouseOver={()=>slidingLeft(sliderRef)}/>
                 <BsFillCaretRightFill className='right' onMouseOver={()=>slidingRight(sliderRef)}/>
-                <div className="icons" ref={sliderRef}>
+                <div
+                    className="icons"
+                    ref={sliderRef}
+                >
                     {SKILLS.map(s => <img key={v4()} src={s.path} alt={s.name} />)}
                 </div>
             </div>

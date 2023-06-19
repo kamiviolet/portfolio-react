@@ -53,7 +53,6 @@ span {
 .self-intro .icons_wrapper {
     height: 120px;
     width: 100%;
-    overflow: hidden;
     position: relative;
 }
 
@@ -61,6 +60,9 @@ span {
     height: inherit;
     width: inherit;
     display: flex;
+    overflow: auto;
+
+    transition: 17s
 }
 
 .self-intro .left,

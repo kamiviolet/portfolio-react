@@ -2,7 +2,7 @@ const PROJECTS = [
     {
         name: "Ubiquitous Biscuit",
         description: `A mock forum inspired by Reddit, allowing users to join/delete/edit the membership and to contribute to the community by sharing articles and comments.`,
-        tools: "JavaScript, NodeJS, Express, React, Vite, jest, CSS",
+        tools: "JavaScript, NodeJS, Express, PostgreSQL, React, Vite, jest, CSS",
         images: {
             web: '/ub_dark_web.png',
             mobile: '/ub_dark_responsive.png'
