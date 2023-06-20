@@ -1,5 +1,4 @@
 import "../css/about.css"
-import Carousel from "../components/Carousel"
 
 export default function About() {
     return (
@@ -13,7 +12,10 @@ export default function About() {
                 <p>
                     Despite my passion about science, I am also fascinated by history and ended up in humanities. I studied Religious studies and Philosophy for my first degree and then pursued Japanese Studies for my postgraduate degree. I learnt to skim tons of information and make analysis out of it. I became good at it and mainly, enjoy it a lot.
                 </p>
-                <Carousel />
+                <figure className="intro_images" >
+                    <img src="/intro_1.jpg" />
+                    <figcaption>The kids of host family in Mongolia I met via CouchSurfing. (Photo taken in May, 2015.)</figcaption>
+                </figure>
                 <p>
                     Theory cannot be totally extracted from practice. I resigned my office job and then travelled from Hong Kong through Siberia to the UK by land in 2015 summer. I wished to experience different culture and understand people more. I made connection with various encounters, working as waitress at busy restaurant, babysitter, carer, sale assistant at supermarket and machine operator in manufacturing sector.
                 </p>

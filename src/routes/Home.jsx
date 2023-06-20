@@ -1,21 +1,20 @@
-import { ThemeContext } from '../contexts/ThemeContext'
-import { Component, useContext, useEffect, useState, useRef } from 'react'
-import {v4} from 'uuid'
-import SKILLS from '../constants/Skills'
+import { useRef } from 'react'
 import '../css/header.css'
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
+import { v4 } from 'uuid'
+import SKILLS from '../constants/Skills'
 
 export default function Home() {
-    const {theme, setTheme} = useContext(ThemeContext)
     const sliderRef = useRef(null);
-    const [offsetX, setOffsetX] = useState(0);
-      
-    const slidingLeft = ({current}) => {
-        console.log(current.offsetWidth)
-        console.log(current.scrollWidth)
+    
+    const slidingLeft = () => {
+        if (sliderRef.current.scrollLeft > 0)
+        sliderRef.current.scrollLeft -= 200
     }
-    const slidingRight = ({current}) => {
-        
+
+    const slidingRight = () => {
+        if (sliderRef.current.scrollLeft < sliderRef.current.scrollLeftMax)
+        sliderRef.current.scrollLeft += 200
     }
 
     return (
@@ -40,12 +39,9 @@ export default function Home() {
                 My current skill set includes:
             </p>
             <div className="icons_wrapper">
-                <BsFillCaretLeftFill className='left' onMouseOver={()=>slidingLeft(sliderRef)}/>
-                <BsFillCaretRightFill className='right' onMouseOver={()=>slidingRight(sliderRef)}/>
-                <div
-                    className="icons"
-                    ref={sliderRef}
-                >
+                <BsFillCaretLeftFill className='left' onClick={()=>{slidingLeft()}}/>
+                <BsFillCaretRightFill className='right' onClick={()=>{slidingRight()}}/>
+                <div ref={sliderRef} className="icons" >
                     {SKILLS.map(s => <img key={v4()} src={s.path} alt={s.name} />)}
                 </div>
             </div>
