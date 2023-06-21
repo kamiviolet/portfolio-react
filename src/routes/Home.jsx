@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import '../css/header.css'
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
 import { v4 } from 'uuid'
@@ -6,16 +6,16 @@ import SKILLS from '../constants/Skills'
 
 export default function Home() {
     const sliderRef = useRef(null);
+    const [side, setSide] = useState({
+        direction: '',
+        time: 0
+    })
     
-    const slidingLeft = () => {
-        if (sliderRef.current.scrollLeft > 0)
-        sliderRef.current.scrollLeft -= 200
-    }
-
-    const slidingRight = () => {
-        if (sliderRef.current.scrollLeft < sliderRef.current.scrollLeftMax)
-        sliderRef.current.scrollLeft += 200
-    }
+    useEffect(()=>{
+        side.direction === 'left'
+        ? sliderRef.current.scrollLeft -= 200
+        : sliderRef.current.scrollLeft += 200
+    }, [side])
 
     return (
         <>
@@ -39,8 +39,8 @@ export default function Home() {
                 My current skill set includes:
             </p>
             <div className="icons_wrapper">
-                <BsFillCaretLeftFill className='left' onClick={()=>{slidingLeft()}}/>
-                <BsFillCaretRightFill className='right' onClick={()=>{slidingRight()}}/>
+                <BsFillCaretLeftFill className='left' onClick={()=>{setSide({direction: 'left', time: side.time++})}}/>
+                <BsFillCaretRightFill className='right' onClick={()=>{setSide({direction: 'right', time: side.time++})}}/>
                 <div ref={sliderRef} className="icons" >
                     {SKILLS.map(s => <img key={v4()} src={s.path} alt={s.name} />)}
                 </div>

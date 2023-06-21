@@ -26,10 +26,13 @@ export default function About() {
             <section className="Vision">
                 <h2>Vision</h2>
                 <p>
-                    Humanity can get this far because we learnt from experience and pass our knowledge around and to next generation (to certain degree). Despite my long pause in technology, I gained various experience in my life and I believe I must be able to apply it into programming.
+                    Humanity can get this far because we learnt from experience and pass our knowledge around and to next generation. Despite my long pause in technology, I gained various experience in my life and I believe I could apply mine into programming.
                 </p>
                 <p>
                     Undoubtfully, our internet has been improved over these years in many aspects and that's done thanks to our constant search for betterness. I aspire to instill my insight gained from my study in humanities and my experience with people into my projects, to add more colours into this vast boundaryless community. 
+                </p>
+                <p>
+                    Oh, other than the above, I strive for clean code. I believe we can find a balance between our urge to move forward and a long term sustainability based on strong foundation.
                 </p>
             </section>
         </main>
