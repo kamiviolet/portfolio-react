@@ -121,7 +121,7 @@ main section p, main section ul, main section ol {
     -webkit-margin-after: 3rem;
     margin-block-end: 3rem;
 
-    font-size: 1.35em;
+    font-size: 1.15em;
     line-height: 1.9;
     letter-spacing: 1.8px;
 }  
@@ -137,4 +137,10 @@ button:hover {
 
 button:focus {
     outline: none;
+}
+
+@media screen and (min-width: 1000px) {
+    main section p, main section ul, main section ol {
+        font-size: 1.35em;
+    }
 }

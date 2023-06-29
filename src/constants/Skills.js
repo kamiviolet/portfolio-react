@@ -12,8 +12,16 @@ const SKILLS = [
         path: '/devicons/sass-original.svg',
     },
     {
+        name: "Tailwind CSS",
+        path: '/devicons/tailwindcss-plain.svg',
+    },
+    {
         name: "JavaScript",
         path: '/devicons/javascript-original.svg',
+    },
+    {
+        name: "TypeScript",
+        path: '/devicons/typescript-original.svg',
     },
     {
         name: "React",
@@ -34,6 +42,10 @@ const SKILLS = [
     {
         name: "Express",
         path: '/devicons/express-original.svg'
+    },
+    {
+        name: "Next",
+        path: '/devicons/nextjs-original-wordmark.svg'
     },
     {
         name: "npm",
@@ -66,14 +78,6 @@ const SKILLS = [
     {
         name: "Inkscape",
         path: '/devicons/inkscape-original.svg'
-    },
-    {
-        name: "C",
-        path: '/devicons/c-plain.svg'
-    },
-    {
-        name: "Bash",
-        path: '/devicons/bash-plain.svg'
     },
 ];
 
