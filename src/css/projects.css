@@ -55,10 +55,6 @@
     height: 100%;
 }
 
-.responsive_thumbnail {
-    display: none;
-}
-
 .btn_wrapper {
     padding-block-start: 1.25em;
     width: 100%;

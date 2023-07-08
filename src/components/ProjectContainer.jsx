@@ -24,8 +24,7 @@ export default function ProjectContainer({project}) {
                 </div>
             </div>
             <div className="project image">
-                <img src={"projects" + project.images.web} className="thumbnail web_thumbnail"/>
-                <img src={"projects" + project.images.mobile} className="thumbnail responsive_thumbnail"/>
+                <img loading="lazy" src={"projects" + project.images.web} className="thumbnail web_thumbnail"/>
             </div>
         </div>
     )
