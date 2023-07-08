@@ -4,7 +4,7 @@ const PROJECTS = [
         description: `A mini project to search for different cat breeds and get overwhelmed by their cuteness.`,
         tools: "TypeScript, React, Next",
         images: {
-            web: '/furryTail_dark.png',
+            web: '/furrytail_dark.png',
             mobile: '/'
         },
         url: {
