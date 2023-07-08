@@ -1,5 +1,31 @@
 const PROJECTS = [
     {
+        name: "FurryTail",
+        description: `A mini project to search for different cat breeds and get overwhelmed by their cuteness.`,
+        tools: "TypeScript, React, Next",
+        images: {
+            web: '/furryTail_dark.png',
+            mobile: '/'
+        },
+        url: {
+            demo: 'https://furrytail.vercel.app/',
+            github: 'https://github.com/kamiviolet/furrytail'
+        }
+    },
+    {
+        name: "Weathering",
+        description: `A mini project for checking weather in current location or anywhere from the world.`,
+        tools: "TypeScript, React, Next, Tailwind CSS",
+        images: {
+            web: '/weathering_dark.png',
+            mobile: '/'
+        },
+        url: {
+            demo: 'https://weathering-two.vercel.app/',
+            github: 'https://github.com/kamiviolet/weathering'
+        }
+    },
+    {
         name: "Ubiquitous Biscuit",
         description: `A mock forum inspired by Reddit, allowing users to join/delete/edit the membership and to contribute to the community by sharing articles and comments.`,
         tools: "JavaScript, NodeJS, Express, PostgreSQL, React, Vite, jest, CSS",

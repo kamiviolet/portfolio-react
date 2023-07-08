@@ -1,5 +1,6 @@
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
-import { FaCodepen } from 'react-icons/fa'
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { FaCodepen } from "react-icons/fa";
+import { SiCodewars } from "react-icons/si";
 
 const SOCIAL_MEIDA = [
     {
@@ -16,7 +17,12 @@ const SOCIAL_MEIDA = [
        name: "@kami-lam",
        icon: <FaCodepen />,
        path: "https://codepen.io/kami-lam"
-    }
+    },
+    {
+      name: "@kamiviolet",
+      icon: <SiCodewars />,
+      path: "https://www.codewars.com/users/kamiviolet"
+   }
  ]
 
  export default SOCIAL_MEIDA;

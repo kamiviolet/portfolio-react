@@ -79,6 +79,22 @@ const SKILLS = [
         name: "Inkscape",
         path: '/devicons/inkscape-original.svg'
     },
+    {
+        name: "Photoshop",
+        path: '/devicons/photoshop-plain.svg'
+    },
+    {
+        name: "Composer",
+        path: '/devicons/composer-original.svg'
+    },
+    {
+        name: "php",
+        path: '/devicons/php-plain.svg'
+    },
+    {
+        name: "Laravel",
+        path: '/devicons/laravel-plain.svg'
+    },
 ];
 
 export default SKILLS
