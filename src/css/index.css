@@ -78,15 +78,13 @@ h2 {
 }
 
 h3 {
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 1.15rem;
-    margin-block: 2rem;
-    padding-inline: .25em;
-    padding-block: 1em;
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 1.45em;
+    padding-block: .5em;
+    margin-block-end: 2rem;
+    padding-inline: .5em;
     text-transform: uppercase;
-    background-color: #55b6a9;
     color: black;
-    box-shadow: darkslategray 0 5px 5px;
     width: 100%;
 }
 

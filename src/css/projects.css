@@ -12,16 +12,15 @@
 .project_container > .details {
     min-height: 400px;
     display: grid; 
+    grid-template-rows: min-content;
     background-color: white;
     color: black;
-    padding: 2em 1em;
     opacity: .9;
 }
 
 .details h3 {
-    font-size: 1.75em;
-    font-family:'Nunito Sans', sans-serif;
-
+    background-color: #5093E3;
+    align-self: stretch;
 }
 
 .details .icon {
@@ -32,6 +31,7 @@
 
 .details [role="value"],
 .details [role="key"]{
+    padding-inline: 1em;
     font-size: 1em;
     font-family:'Nunito Sans', sans-serif;
     margin-block-end: unset;
@@ -56,6 +56,7 @@
 }
 
 .btn_wrapper {
+    margin-left: 2em;
     padding-block-start: 1.25em;
     width: 100%;
     max-width: 250px;

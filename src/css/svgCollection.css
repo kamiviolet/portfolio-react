@@ -12,6 +12,10 @@
     flex-wrap: wrap;
 }
 
+.svg_collection_container h3 {
+    background-color: #51b6a8;
+}
+
 .svgicons img {
     width: 90px;
     height: 90px;
