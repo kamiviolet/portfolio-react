@@ -21,7 +21,7 @@ body {
     min-height: 100vh;
 }
 
-.light ~ main > section,
+.light ~ main section,
 .light ~ footer,
 .light ~ nav > .menu_wrapper li a,
 .light ~ header {
@@ -71,10 +71,23 @@ h1 {
 
 h2 {
     font-family: "Nunito Sans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     color: #5093E3;
     margin-block: 3rem;
     text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.15rem;
+    margin-block: 2rem;
+    padding-inline: .25em;
+    padding-block: 1em;
+    text-transform: uppercase;
+    background-color: #55b6a9;
+    color: black;
+    box-shadow: darkslategray 0 5px 5px;
+    width: 100%;
 }
 
 p, ol, ul {

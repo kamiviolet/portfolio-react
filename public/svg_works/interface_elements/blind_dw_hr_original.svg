@@ -1,0 +1,43 @@
+<svg
+   width="726.1676"
+   height="713.57733"
+   viewBox="0 0 726.1676 713.57733"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1"
+     transform="translate(-1905.5195,-974.23126)">
+    <g
+       id="g2487">
+      <rect
+         style="display:inline;fill:#afe9dd;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:18.1127;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+         id="rect741"
+         width="619.49384"
+         height="668.48907"
+         x="1961.1967"
+         y="1010.2632" />
+      <path
+         id="rect28950-9"
+         style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#666666;stroke-width:18.1667;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 1956.5434,1060.2774 v 618.0825 h 624.12 v -618.0825 z m 32.8241,48.092 h 558.4718 v 521.8985 h -558.4718 z" />
+      <rect
+         style="fill:#552200;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:26.3745;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         id="rect29393-9"
+         width="726.1676"
+         height="86.046043"
+         x="1905.5195"
+         y="974.23126" />
+      <rect
+         style="opacity:0.9;fill:#c87137;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:21.1321;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+         id="rect687"
+         width="630.96887"
+         height="530.17877"
+         x="1957.6606"
+         y="1061.3945" />
+    </g>
+  </g>
+</svg>

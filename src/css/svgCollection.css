@@ -1,0 +1,31 @@
+.svg_collection_container {
+    max-width: unset;
+}
+
+.svgicons_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.svgicons_wrapper > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.svgicons img {
+    width: 90px;
+    height: 90px;
+    margin: 1em;
+    box-shadow: 1px 1px 1px rgb(179, 179, 179);
+    background-color: white;
+    padding: .75em;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .85;
+}
+
+@media (width > 1000px) {
+    .svgicons_wrapper > div {
+        width: 90%;
+    }
+}

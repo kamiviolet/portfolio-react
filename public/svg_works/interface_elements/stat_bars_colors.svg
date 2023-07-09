@@ -1,0 +1,63 @@
+<svg
+   width="600"
+   height="591.71906"
+   viewBox="0 0 600 591.71906"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1"
+     transform="translate(14.600629,-381.63147)">
+    <g
+       id="g2053">
+      <rect
+         style="fill:#000000;fill-opacity:0.945098;fill-rule:nonzero;stroke:none;stroke-width:1.52928;stroke-miterlimit:4;stroke-dasharray:1.52928, 3.05855;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect6848-6"
+         width="594.8241"
+         height="28.382296"
+         x="-9.4246969"
+         y="-973.35052"
+         ry="6.679224"
+         transform="scale(1,-1)" />
+      <rect
+         style="fill:#c83737;fill-opacity:0.984064;fill-rule:nonzero;stroke:none;stroke-width:1.52928;stroke-miterlimit:4;stroke-dasharray:1.52928, 3.05855;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect6848-2-2"
+         width="256.56555"
+         height="124.53078"
+         x="688.59521"
+         y="-178.26082"
+         ry="0"
+         transform="rotate(90)" />
+      <rect
+         style="fill:#87de87;fill-opacity:0.588235;fill-rule:nonzero;stroke:none;stroke-width:1.52928;stroke-miterlimit:4;stroke-dasharray:1.52928, 3.05855;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect6848-2-2-7"
+         width="413.77518"
+         height="124.53078"
+         x="531.38531"
+         y="-359.82648"
+         ry="0"
+         transform="rotate(90)" />
+      <rect
+         style="fill:#87aade;fill-opacity:0.784314;fill-rule:nonzero;stroke:none;stroke-width:1.52928;stroke-miterlimit:4;stroke-dasharray:1.52928, 3.05855;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect6848-2-2-7-2"
+         width="520.81158"
+         height="124.53078"
+         x="424.3493"
+         y="-542.7832"
+         ry="0"
+         transform="rotate(90)" />
+      <rect
+         style="fill:#000000;fill-opacity:0.945098;fill-rule:nonzero;stroke:none;stroke-width:1.52928;stroke-miterlimit:4;stroke-dasharray:1.52928, 3.05855;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect6848-6-3"
+         width="590.94116"
+         height="29.088852"
+         x="381.63147"
+         y="-14.600629"
+         ry="6.8454976"
+         transform="matrix(0,1,1,0,0,0)" />
+    </g>
+  </g>
+</svg>

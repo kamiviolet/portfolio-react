@@ -9,6 +9,8 @@ import Contact from './routes/Contact.jsx'
 import Projects from './routes/Projects.jsx'
 import Skills from './routes/Skills.jsx'
 import ErrorPage from './error-page.jsx'
+import DevelopmentMsg from './routes/DevelopmentMsg.jsx'
+import SVGCollection from './routes/SVGCollection.jsx'
 import './css/index.css'
 
 const router = createBrowserRouter([
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: "/skills",
         element: <Skills />
+      },
+      {
+        path: "/svg_collections",
+        element: <SVGCollection />
+      },
+      {
+        path: "/albums",
+        element: <DevelopmentMsg />
       },
       {
         path: "/projects",

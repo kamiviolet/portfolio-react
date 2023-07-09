@@ -1,0 +1,75 @@
+<svg
+   width="695.37531"
+   height="605.81561"
+   viewBox="0 0 695.37531 605.81561"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient4868">
+      <stop
+         style="stop-color:#1b1b2e;stop-opacity:1;"
+         offset="0"
+         id="stop4864" />
+      <stop
+         style="stop-color:#5d5d9b;stop-opacity:0;"
+         offset="1"
+         id="stop4866" />
+    </linearGradient>
+    <radialGradient
+       xlink:href="#linearGradient4868"
+       id="radialGradient5662"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.0447608,1109.7163,-43.197458)"
+       cx="717.94226"
+       cy="965.07245"
+       fx="717.94226"
+       fy="965.07245"
+       r="54.329433" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-395.9369,-747.86891)">
+    <g
+       id="g5783"
+       transform="translate(-1084.0345,230.98752)">
+      <path
+         id="path5652"
+         style="opacity:0.73;fill:#ffffff;fill-rule:evenodd;stroke:#666666;stroke-width:18.8976;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         d="m 1489.4202,526.33019 v 110.07575 h 24.0637 a 319.55374,361.22366 0 0 0 -5.3783,60.86823 319.55374,361.22366 0 0 0 319.5527,361.22243 319.55374,361.22366 0 0 0 319.5541,-361.22243 319.55374,361.22366 0 0 0 -5.2013,-60.86823 h 23.8868 V 526.33019 Z" />
+      <path
+         id="path5654"
+         style="opacity:1;fill:#f9f9f9;fill-rule:evenodd;stroke:#7a7a7a;stroke-width:19.2192;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         d="m 1506.1631,646.40594 a 333.69595,362.6063 0 0 0 -12.1997,95.58213 333.69595,362.6063 0 0 0 166.6489,313.88043 c -5.3231,-24.8409 -8.6324,-51.1855 -9.6119,-78.48557 -6.0732,-169.26707 73.609,-271.56932 176.8167,-269.36786 93.8009,2.0008 177.8353,107.58128 176.8167,269.36786 -0.1682,26.71297 -2.8651,52.49387 -7.6825,76.85557 a 333.69595,362.6063 0 0 0 164.4034,-312.25043 333.69595,362.6063 0 0 0 -11.9032,-95.58213 z" />
+      <ellipse
+         style="opacity:0.73;fill:#ffffff;fill-rule:evenodd;stroke:#666666;stroke-width:18.8976;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="ellipse5656"
+         cx="1827.6586"
+         cy="928.17224"
+         rx="129.265"
+         ry="130.32433" />
+      <ellipse
+         style="opacity:0.73;fill:#000000;fill-rule:evenodd;stroke:#666666;stroke-width:18.8976;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="ellipse5658"
+         cx="1827.6586"
+         cy="947.65656"
+         rx="77.367989"
+         ry="78.001999" />
+      <ellipse
+         style="opacity:0.73;fill:url(#radialGradient5662);fill-opacity:1;fill-rule:evenodd;stroke:#cccccc;stroke-width:18.8976;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="ellipse5660"
+         ry="47.312466"
+         rx="44.880634"
+         cy="965.07245"
+         cx="1827.6586" />
+      <path
+         id="path5717"
+         style="opacity:0.25;fill:#1a1a1a;fill-opacity:1;fill-rule:evenodd;stroke:#666666;stroke-width:23.9732;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         d="m 1504.7836,648.8011 a 332.46276,375.93332 0 0 0 -9.5845,88.01029 332.46276,375.93332 0 0 0 333.3576,373.89761 332.46276,375.93332 0 0 0 331.5623,-375.93295 l -0.019,-4.06807 a 332.46276,375.93332 0 0 0 -9.6502,-81.90688 z" />
+    </g>
+  </g>
+</svg>
