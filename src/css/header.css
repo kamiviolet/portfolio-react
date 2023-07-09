@@ -39,6 +39,12 @@ span {
     font-size: .75em;
 }
 
+.header p:first-of-type {
+    margin-block: 1em;
+    margin-bottom: unset;
+    font-size: .75em;
+}
+
 .header img {
     justify-self: center;
     width: 100%;
