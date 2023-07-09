@@ -12,9 +12,9 @@
 }
 
 .icons img {
-    width: 90px;
-    height: 90px;
-    margin: 1em;
+    width: 75px;
+    height: 75px;
+    margin: .75em;
     box-shadow: 1px 1px 1px rgb(179, 179, 179);
     background-color: white;
     padding: .75em;

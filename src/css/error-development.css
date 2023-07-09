@@ -6,6 +6,7 @@
     width: inherit;
     text-align: center;
     color: whitesmoke;
+    line-height: 2;
 }
 
 .light ~ #error-page, .light ~ #development_msg {

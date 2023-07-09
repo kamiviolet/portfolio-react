@@ -56,7 +56,7 @@
 }
 
 .btn_wrapper {
-    margin-left: 2em;
+    margin-left: 1em;
     padding-block-start: 1.25em;
     width: 100%;
     max-width: 250px;
@@ -65,18 +65,31 @@
 }
 
 .btn_wrapper a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: #5FCEBF;
     color: black;
-    padding-inline: 2em;
+    padding-inline: 1em;
     padding-block: 1em;
     height: 50px;
+    margin-inline-end: 2em;
+    border-radius: 5px;
 }
+
 
 .btn_wrapper a:hover, 
 .btn_wrapper a:focus {
-    background-color: #FFA500;
+    background-color: #5093E3;
     color: black;
 }
+
+.btn_wrapper a:first-of-type {
+    background-color: #FFA500;
+}
+
+
 
 @media screen and (min-width: 750px) {
     .project_container {

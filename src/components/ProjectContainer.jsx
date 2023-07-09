@@ -1,3 +1,4 @@
+import { BsGithub } from "react-icons/bs";
 import { Link } from 'react-router-dom'
 import SKILLS from '../constants/Skills'
 import { v4 } from 'uuid'
@@ -20,7 +21,9 @@ export default function ProjectContainer({project}) {
                 </div>
                 <div className="btn_wrapper">
                     <Link to={project.url.demo} target='_blank'>Live demo</Link >
-                    <Link to={project.url.github} target='_blank'>Code</Link>
+                    <Link to={project.url.github} target='_blank'>
+                        <BsGithub /> <span>Code</span>
+                    </Link>
                 </div>
             </div>
             <div className="project image">
