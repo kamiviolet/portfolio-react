@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixin";
 @import "./base";
 
 @import "components/bg";
@@ -7,9 +8,8 @@
 @import "components/footer";
 @import "components/nav";
 @import "components/responsive_menuBtn";
-@import "components/skill_list";
+@import "components/icon";
 
-@import "routes/about";
 @import "routes/contact";
 @import "routes/error-development";
 @import "routes/projects";
