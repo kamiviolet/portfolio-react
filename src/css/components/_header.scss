@@ -1,8 +1,8 @@
 .header {
     display: grid;
     margin-block: $margin-xxl;
+    margin-inline: $base-margin;
     color: $gray;
-    margin-inline: $padding-lg * 2;
 
     h1 {
         font-size: $font-size-xxl * 1.25;
@@ -22,5 +22,6 @@
         border-left: 10px solid $color-primary-4;
         box-sizing: content-box;
         padding-left: $padding-lg;
+        margin-inline: $padding-lg * 2;
     }
 }

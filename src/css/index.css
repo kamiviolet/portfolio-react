@@ -94,7 +94,7 @@ main {
 main section {
   max-width: 1200px;
   width: inherit;
-  padding-inline: 4em;
+  padding-inline: 0.75em;
   -webkit-margin-after: 3em;
           margin-block-end: 3em;
   color: #cecccc;
@@ -124,6 +124,9 @@ main.light_theme .title {
 }
 
 @media (width > 1024px) {
+  main section {
+    padding-inline: 4em;
+  }
   main p, main ul, main ol {
     font-size: 1.5em;
   }
@@ -290,8 +293,8 @@ main.light_theme .title {
 .header {
   display: grid;
   margin-block: 5em;
+  margin-inline: 1em;
   color: #adadad;
-  margin-inline: 4em;
 }
 .header h1 {
   font-size: 3.75em;
@@ -309,6 +312,7 @@ main.light_theme .title {
     border-left: 10px solid #aa2abb;
     box-sizing: content-box;
     padding-left: 2em;
+    margin-inline: 4em;
   }
 }
 footer {
