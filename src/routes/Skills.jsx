@@ -3,7 +3,6 @@ import SKILLS from '../constants/Skills'
 
 export default function Skills() {
     return (
-        <main>
             <section className="skills">
                 <h2>Skills</h2>
                 <div className="description">
@@ -19,6 +18,5 @@ export default function Skills() {
                     {SKILLS.map(s => <img key={v4()} src={s.path} alt={s.name} />)}
                 </div>
             </section>
-        </main>
     )
 }

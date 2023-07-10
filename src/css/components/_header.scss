@@ -1,9 +1,7 @@
 .header {
-    grid-row: 2/3;
     display: grid;
     width: inherit;
     max-width: 1200px;
-    font-size: 1.55em;
     margin-block: 3em 2em;
     color: $gray;
     padding-inline: 2rem;
@@ -12,17 +10,11 @@
         display: block;
     }
 
-    .name {
-        margin-block: .15em;
-        color: $color-primary-3;
-    }
-
     .title {
         text-transform: uppercase; 
         letter-spacing: .15em;
         color: $color-information;
         font-weight: 800;
-        font-size: $font-size-lg;
     }
 
     [role="description"] {
@@ -48,11 +40,6 @@
         [role='description'] {
             grid-column: 1/ span 2;
         }
-
-        .name {
-            font-size: 2em;
-        }
-        
         img {
             grid-column: 3/4;
         }

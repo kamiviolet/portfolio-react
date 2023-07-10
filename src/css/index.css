@@ -4,12 +4,8 @@
   box-sizing: border-box;
 }
 
-:root {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: #000000;
 }
 
@@ -31,30 +27,27 @@ h2, h3 {
 }
 
 h1 {
-  margin-bottom: 0;
-  margin-block: 0.5em;
+  margin-block: 1em;
+  font-size: 2.5em;
+  color: #9abef1;
 }
 
 h2 {
-  font-size: 1.65em;
+  font-size: 2em;
   color: #9abef1;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 h2:first-of-type {
-  -webkit-margin-before: 3em;
-          margin-block-start: 3em;
+  -webkit-margin-before: 2em;
+          margin-block-start: 2em;
 }
 
 h3 {
   font-size: 1.5em;
-  padding: 0.5em;
+  padding: 0.75em;
   -webkit-margin-after: 2em;
           margin-block-end: 2em;
   color: #000000;
-}
-
-p, ol, ul {
-  font-weight: 300;
 }
 
 p {
@@ -63,7 +56,6 @@ p {
 
 ul {
   list-style: none;
-  padding: 0;
 }
 
 a {
@@ -77,14 +69,14 @@ a:hover, a:focus {
 
 strong {
   position: relative;
-  color: black;
+  color: #000000;
   line-height: 1.25;
   background-color: #FFA500;
   border-radius: 5px;
 }
 
 button {
-  padding: 1rem;
+  padding: 1em;
   cursor: pointer;
 }
 button:hover, button:focus {
@@ -93,39 +85,45 @@ button:hover, button:focus {
 
 main {
   grid-row: 3/4;
-  display: grid;
-  align-items: first baseline;
-  justify-items: center;
   width: inherit;
   font-family: "Arial narrow", sans-serif;
+  -webkit-padding-before: 2em;
+          padding-block-start: 2em;
+  display: grid;
+  justify-content: center;
 }
 main section {
   max-width: 1200px;
   width: inherit;
-  padding-inline: 2rem;
+  padding-inline: 4em;
   -webkit-margin-after: 3em;
           margin-block-end: 3em;
-  color: #cecccc;
+  color: #000000;
 }
-main section:first-of-type {
+main p, main ul, main ol {
+  -webkit-margin-after: 3em;
+          margin-block-end: 3em;
   -webkit-margin-before: 3em;
           margin-block-start: 3em;
+  line-height: 1.75;
+  letter-spacing: 2px;
+  color: #cecccc;
 }
-main section p, main section ul, main section ol {
+main p:first-of-type, main ul:first-of-type, main ol:first-of-type {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
   -webkit-margin-after: 3em;
           margin-block-end: 3em;
-  font-size: 1.15em;
-  line-height: 1.9;
-  letter-spacing: 1.8px;
 }
 
-.light ~ main section,
-.light ~ footer,
-.light ~ nav > .menu_wrapper li a,
-.light ~ header,
-.light ~ #error-page,
-.light ~ #development_msg {
-  color: black;
+main.light_theme h1 {
+  color: #0E3767;
+}
+main.light_theme h2 {
+  color: #0E3767;
+}
+main.light_theme p {
+  color: #000000;
 }
 
 .light ~ nav {
@@ -162,7 +160,8 @@ main section p, main section ul, main section ol {
   left: 0;
   z-index: -10;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .star {
@@ -312,11 +311,9 @@ main section p, main section ul, main section ol {
 }
 
 .header {
-  grid-row: 2/3;
   display: grid;
   width: inherit;
   max-width: 1200px;
-  font-size: 1.55em;
   margin-block: 3em 2em;
   color: #adadad;
   padding-inline: 2rem;
@@ -324,16 +321,11 @@ main section p, main section ul, main section ol {
 .header span {
   display: block;
 }
-.header .name {
-  margin-block: 0.15em;
-  color: #9bbae0;
-}
 .header .title {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: #5FCEBF;
   font-weight: 800;
-  font-size: 1.5em;
 }
 .header [role=description] {
   display: grid;
@@ -355,9 +347,6 @@ main section p, main section ul, main section ol {
   }
   .header [role=description] {
     grid-column: 1/span 2;
-  }
-  .header .name {
-    font-size: 2em;
   }
   .header img {
     grid-column: 3/4;
@@ -587,7 +576,6 @@ footer {
   padding-inline: 1em;
   width: inherit;
   text-align: center;
-  color: #cecccc;
   line-height: 2;
 }
 
@@ -611,6 +599,8 @@ footer {
 .project_container .details h3 {
   background-color: #5093E3;
   align-self: stretch;
+  -webkit-margin-after: unset;
+          margin-block-end: unset;
 }
 .project_container .details .icon {
   width: 35px;
