@@ -1,0 +1,21 @@
+.icons {
+    color: black;
+    align-self: first baseline;
+
+    img {
+        width: 80px;
+        height: 80px;
+        margin: .75em;
+        box-shadow: 1px 1px 1px $gray;
+        background-color: $white;
+        padding: .75em;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: .85;
+
+        &:hover {
+            transform: scale(110%);
+            opacity: 1;
+        }
+    }
+}

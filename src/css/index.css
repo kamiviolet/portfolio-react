@@ -107,6 +107,38 @@ main section p, main section ul, main section ol {
   letter-spacing: 1.8px;
 }
 
+.light ~ main section,
+.light ~ footer,
+.light ~ nav > .menu_wrapper li a,
+.light ~ header {
+  color: black;
+}
+
+.light ~ nav {
+  background-color: #9bbae0;
+}
+
+.light ~ nav > .menu_wrapper {
+  background-color: inherit;
+}
+
+.light ~ nav > .menu_wrapper li a:hover {
+  color: #c4500d;
+}
+
+.light ~ main > section h2,
+.light ~ header .name {
+  color: #0f427c;
+}
+
+.light ~ header .title {
+  color: #107465;
+}
+
+.light ~ main > section strong {
+  color: #c4500d;
+}
+
 @media screen and (min-width: 1000px) {
   main section p, main section ul, main section ol {
     font-size: 1.35em;
