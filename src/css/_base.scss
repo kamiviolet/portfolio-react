@@ -28,8 +28,7 @@ h2, h3 {
 
 h1 {
     margin-block: 1em;
-    font-size: $font-size-xl * 1.25;
-    color: $color-primary-2;
+    color: $color-primary-3;
 }
 
 h2 {
@@ -103,16 +102,14 @@ main {
     }
             
     p, ul, ol {
-        margin-block-end: $margin-xl;
-        margin-block-start: $margin-xl;
+        margin-block: $margin-xl;
         font-size: $base-font-size * 1.25;
         line-height: 1.75;
         letter-spacing: 2px;
         color: $color-text-dark;
 
         &:first-of-type {
-            margin-block-start: 0;
-            margin-block-end: $margin-xl;
+            margin-block: 0;
         }
     }  
 }

@@ -1,47 +1,26 @@
 .header {
     display: grid;
-    width: inherit;
-    max-width: 1200px;
-    margin-block: 3em 2em;
+    margin-block: $margin-xxl;
     color: $gray;
-    padding-inline: 2rem;
-    
-    span {
-        display: block;
+    margin-inline: $padding-lg * 2;
+
+    h1 {
+        font-size: $font-size-xxl * 1.25;
     }
 
     .title {
         text-transform: uppercase; 
+        font-size: $font-size-lg * 1.25;
         letter-spacing: .15em;
         color: $color-information;
         font-weight: 800;
-    }
-
-    [role="description"] {
-        display: grid;
-        align-self: center;
-    }
-    
-    p {
-        margin-block-end: 1.75em;
-
-        &:first-of-type {
-            margin-bottom: unset;
-        }
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .header {
-        grid-template-columns: minmax(auto, 500px) auto;
         border-left: 10px solid $color-primary-4;
-        padding-inline: 2em;
-
-        [role='description'] {
-            grid-column: 1/ span 2;
-        }
-        img {
-            grid-column: 3/4;
-        }
+        box-sizing: content-box;
+        padding-left: $padding-lg;
     }
 }

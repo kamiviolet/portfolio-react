@@ -11,7 +11,7 @@ export default function ProjectContainer({project}) {
             </div>
             <div className="project details">
                 <h3>{project.name}</h3>
-                <span role="key">Description:</span><p role="value">{project.description}</p>
+                <span role="key">Description:</span><span role="value">{project.description}</span>
                 <span role="key">Tools:</span>
                 <div role="value">
                     {
