@@ -10,99 +10,92 @@
     gap: 2em;
     color: lightgray;
     padding-inline: 2rem;
+    
+    span {
+        display: block;
+    }
+
+    .name {
+        margin-block: .15em;
+        color: #729BD4;
+    }
+
+    .title {
+        text-transform: uppercase; 
+        letter-spacing: .15em;
+        color: #5FCEBF;
+        font-weight: 800;
+    }
+
+    [role="description"] {
+        display: grid;
+        align-self: center;
+        line-height: 1.9;
+    }
+    
+    p {
+        margin-block: 1.75em;
+        font-size: .75em;
+
+        &:first-of-type {
+            margin-block: 1em;
+            margin-bottom: unset;
+            font-size: .75em;
+        }
+    }
 }
 
-span {
-    display: block;
-}
-
-.header .name {
-    margin-block: .15em;
-    color: #729BD4;
-}
-
-.title {
-    text-transform: uppercase; 
-    letter-spacing: .15em;
-    color: #5FCEBF;
-    font-weight: 800;
-}
-
-.header > [role="description"] {
-    display: grid;
-    align-self: center;
-    line-height: 1.9;
-}
-
-.header p {
-    margin-block: 1.75em;
-    font-size: .75em;
-}
-
-.header p:first-of-type {
-    margin-block: 1em;
-    margin-bottom: unset;
-    font-size: .75em;
-}
-
-.header img {
-    justify-self: center;
-    width: 100%;
-    max-width: 500px;
-}
-
-.self-intro p {
+.self-intro {
     font-size: 1.15em;
-}
 
-.self-intro .icons_wrapper {
-    height: 120px;
-    width: 100%;
-    position: relative;
-}
+    .icons_wrapper {
+        height: 120px;
+        width: 100%;
+        position: relative;
+    }
 
-.self-intro .icons {
-    height: inherit;
-    width: inherit;
-    display: flex;
-    overflow: hidden;
-}
+    .icons {
+        height: inherit;
+        width: inherit;
+        display: flex;
+        overflow: hidden;
+    }
 
-.self-intro .left,
-.self-intro .right {
-    display: block;
-    position: absolute;
-    font-size: 2em;
-    z-index: 2;
-    height: 100%;
-    background-color: #729bd4b4;
-    color: black;
-    cursor: pointer;
-}
+    .left,
+    .right {
+        display: block;
+        position: absolute;
+        font-size: 2em;
+        z-index: 2;
+        height: 100%;
+        background-color: #729bd4b4;
+        color: black;
+        cursor: pointer;
+    }
 
-.self-intro .left {
-    left: 0
-}
-
-.self-intro .right {
-    right: 0;
+    .left {
+        left: 0
+    }
+    .right {
+        right: 0;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
     .header {
         padding-block-start: 2rem;
         grid-template-columns: minmax(auto, 500px) auto;
-    }
 
-    .header [role='description'] {
-        grid-column: 1/ span 2;
-    }
+        [role='description'] {
+            grid-column: 1/ span 2;
+        }
 
-    .header .name {
-        font-size: 2em;
-    }   
-
-    img {
-        grid-column: 3/4;
+        .name {
+            font-size: 2em;
+        }
+        
+        img {
+            grid-column: 3/4;
+        }
     }
 }

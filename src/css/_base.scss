@@ -90,8 +90,8 @@ button {
 main {
     grid-row: 3/4;
     display: grid;
-    align-items: center;
-    justify-items: first baseline;
+    align-items: first baseline;
+    justify-items: center;
     width: inherit;
     font-family: $font-stack-4;
 

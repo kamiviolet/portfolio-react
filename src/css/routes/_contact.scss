@@ -1,39 +1,39 @@
-.contact p {
-    text-align: center;
+.contact {
+    p {
+        text-align: center;
+    }
+    
+    .card_wrapper {
+        display: grid;
+        gap: 2rem;
+        justify-items: center;
+        margin-block: 3em;
+
+        .social_media_card {
+            background-color: $white;
+            opacity: .85;
+            width: 250px;
+            border-radius: 10px;
+            padding: 1em 2em;
+
+            &:hover,
+            &:focus {
+                background-color: $color-highlight;
+            }
+
+            * {
+                color: $black;
+                margin: 0;
+            }
+            
+            svg {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
 }
 
-.card_wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    justify-items: center;
-    margin-block: 3em;
-}
-
-.social_media_card {
-    background-color: white;
-    opacity: .85;
-    width: 250px;
-    font-family: "Arial narrow", sans-serif;
-
-    border-radius: 10px;
-    padding: 1em 2em;
-}
-
-.social_media_card:hover,
-.social_media_card:focus {
-    background-color: #FFA500;
-}
-
-.social_media_card > * {
-    color: black;
-    margin: 0;
-}
-
-.social_media_card svg {
-    width: 45px;
-    height: 45px;
-}
 
 @media screen and (min-width: 1000px) {
     .card_wrapper {

@@ -1,18 +1,11 @@
-#error-page, #development_msg {
+#error-page,
+#development_msg {
     display: grid;
     height: 100%;
     padding-block: 5em;
     padding-inline: 1em;
     width: inherit;
     text-align: center;
-    color: whitesmoke;
+    color: $color-text;
     line-height: 2;
-}
-
-.light ~ #error-page, .light ~ #development_msg {
-    color: black;
-}
-
-h1 {
-    margin-block: 2rem;
 }

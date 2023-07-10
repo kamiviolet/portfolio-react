@@ -1,5 +1,8 @@
 @use "sass:math";
 
+$black: #000000;
+$white: #e4e4e4;
+$gray: #adadad;
 $color-primary-0: #0E3767;
 $color-primary-1: #5093E3;
 $color-primary-2: #9abef1;
@@ -7,9 +10,7 @@ $color-primary-3: #9bbae0;
 $color-primary-4: #aa2abb;
 $color-information: #5FCEBF;
 $color-highlight: #FFA500;
-$black: #000000;
-$white: #f0f0f0;
-$gray: #bbbbbb;
+$color-text: $white;
 
 $font-stack-1: 'Share Tech Mono', monospace;
 $font-stack-2: 'Nunito Sans', sans-serif;
