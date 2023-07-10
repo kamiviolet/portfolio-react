@@ -1,9 +1,12 @@
 .svg_collection_container {
+    margin-block: $margin-lg;
     max-width: unset;
 
     .svgicons_wrapper {
         display: grid;
         justify-items: center;
+        margin-block: $margin-lg;
+
 
         div {
             display: flex;

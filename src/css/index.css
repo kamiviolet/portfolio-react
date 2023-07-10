@@ -28,8 +28,7 @@ h2, h3 {
 
 h1 {
   margin-block: 1em;
-  font-size: 2.5em;
-  color: #9abef1;
+  color: #9bbae0;
 }
 
 h2 {
@@ -101,20 +100,14 @@ main section {
   color: #cecccc;
 }
 main p, main ul, main ol {
-  -webkit-margin-after: 3em;
-          margin-block-end: 3em;
-  -webkit-margin-before: 3em;
-          margin-block-start: 3em;
+  margin-block: 3em;
   font-size: 1.25em;
   line-height: 1.75;
   letter-spacing: 2px;
   color: #cecccc;
 }
 main p:first-of-type, main ul:first-of-type, main ol:first-of-type {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 3em;
-          margin-block-end: 3em;
+  margin-block: 0;
 }
 
 main.light_theme h1 {
@@ -296,44 +289,26 @@ main.light_theme .title {
 
 .header {
   display: grid;
-  width: inherit;
-  max-width: 1200px;
-  margin-block: 3em 2em;
+  margin-block: 5em;
   color: #adadad;
-  padding-inline: 2rem;
+  margin-inline: 4em;
 }
-.header span {
-  display: block;
+.header h1 {
+  font-size: 3.75em;
 }
 .header .title {
   text-transform: uppercase;
+  font-size: 1.875em;
   letter-spacing: 0.15em;
   color: #5FCEBF;
   font-weight: 800;
 }
-.header [role=description] {
-  display: grid;
-  align-self: center;
-}
-.header p {
-  -webkit-margin-after: 1.75em;
-          margin-block-end: 1.75em;
-}
-.header p:first-of-type {
-  margin-bottom: unset;
-}
 
 @media only screen and (min-width: 1024px) {
   .header {
-    grid-template-columns: minmax(auto, 500px) auto;
     border-left: 10px solid #aa2abb;
-    padding-inline: 2em;
-  }
-  .header [role=description] {
-    grid-column: 1/span 2;
-  }
-  .header img {
-    grid-column: 3/4;
+    box-sizing: content-box;
+    padding-left: 2em;
   }
 }
 footer {
@@ -583,8 +558,8 @@ main.light_theme .bar {
   display: grid;
   grid-template-rows: min-content;
   background-color: white;
-  color: black;
   opacity: 0.9;
+  color: black;
 }
 .project_container .details h3 {
   background-color: #5093E3;
@@ -595,21 +570,17 @@ main.light_theme .bar {
 .project_container .details .icon {
   width: 35px;
   height: 35px;
-  -webkit-margin-end: 0.25em;
-          margin-inline-end: 0.25em;
+  -webkit-margin-end: 0.5em;
+          margin-inline-end: 0.5em;
 }
 .project_container .details [role=value],
 .project_container .details [role=key] {
   padding-inline: 1em;
-  font-size: 1em;
   font-family: "Nunito Sans", sans-serif;
-  -webkit-margin-after: unset;
-          margin-block-end: unset;
-  line-height: normal;
-  letter-spacing: normal;
+  padding-top: 1em;
 }
 .project_container .details [role=key] {
-  padding-top: 1em;
+  font-weight: 600;
 }
 .project_container .web_thumbnail {
   -o-object-fit: cover;
@@ -682,11 +653,13 @@ main.light_theme .bar {
   }
 }
 .svg_collection_container {
+  margin-block: 2em;
   max-width: unset;
 }
 .svg_collection_container .svgicons_wrapper {
   display: grid;
   justify-items: center;
+  margin-block: 2em;
 }
 .svg_collection_container .svgicons_wrapper div {
   display: flex;
