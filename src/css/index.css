@@ -10,7 +10,7 @@
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: black;
+  color: #000000;
 }
 
 #root {
@@ -21,47 +21,13 @@ body {
   min-height: 100vh;
 }
 
-.light ~ main section,
-.light ~ footer,
-.light ~ nav > .menu_wrapper li a,
-.light ~ header {
-  color: black;
+h1, h2, h3 {
+  font-family: "Nunito Sans", sans-serif;
+  width: 100%;
 }
 
-.light ~ nav {
-  background-color: #9bbae0;
-}
-
-.light ~ nav > .menu_wrapper {
-  background-color: inherit;
-}
-
-.light ~ nav > .menu_wrapper li a:hover {
-  color: #c4500d;
-}
-
-.light ~ main > section h2,
-.light ~ header .name {
-  color: #0f427c;
-}
-
-.light ~ header .title {
-  color: #107465;
-}
-
-.light ~ main > section strong {
-  color: #c4500d;
-}
-
-main {
-  grid-row: 3/4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: inherit;
-  font-weight: 500;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+h2, h3 {
+  text-transform: uppercase;
 }
 
 h1 {
@@ -70,23 +36,17 @@ h1 {
 }
 
 h2 {
-  font-family: "Nunito Sans", sans-serif;
   font-size: 1.65rem;
-  color: #5093E3;
-  margin-block: 3rem;
-  text-transform: uppercase;
+  color: #9abef1;
+  margin-block: 3em;
 }
 
 h3 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.45em;
-  padding-block: 0.5em;
+  font-size: 1.5em;
+  padding: 0.5em;
   -webkit-margin-after: 2rem;
           margin-block-end: 2rem;
-  padding-inline: 0.5em;
-  text-transform: uppercase;
-  color: black;
-  width: 100%;
+  color: #000000;
 }
 
 p, ol, ul {
@@ -96,25 +56,6 @@ p, ol, ul {
 
 p {
   margin-bottom: 1rem;
-  text-rendering: optimizeSpeed;
-}
-
-a {
-  text-decoration: none;
-  color: #f0f0f0;
-  transition: 400ms;
-}
-
-a:hover {
-  color: #aa2abb;
-}
-
-a:focus {
-  color: #aa2abb;
-}
-
-strong {
-  color: #FFA500;
 }
 
 ul {
@@ -122,33 +63,48 @@ ul {
   padding: 0;
 }
 
-main section {
-  max-width: 1200px;
-  width: inherit;
-  margin-block: 3rem;
-  padding-inline: 2rem;
-  color: lightgray;
+a {
+  text-decoration: none;
+  color: #f0f0f0;
+  transition: 400ms;
+}
+a:hover, a:focus {
+  color: #aa2abb;
 }
 
-main section p, main section ul, main section ol {
-  -webkit-margin-after: 3rem;
-  margin-block-end: 3rem;
-  font-size: 1.15em;
-  line-height: 1.9;
-  letter-spacing: 1.8px;
+strong {
+  color: #FFA500;
 }
 
 button {
   padding: 1rem;
   cursor: pointer;
 }
-
-button:hover {
+button:hover, button:focus {
   outline: none;
 }
 
-button:focus {
-  outline: none;
+main {
+  grid-row: 3/4;
+  display: grid;
+  align-items: center;
+  justify-items: first baseline;
+  width: inherit;
+  font-family: "Arial narrow", sans-serif;
+}
+main section {
+  max-width: 1200px;
+  width: inherit;
+  margin-block: 3rem;
+  padding-inline: 2rem;
+  color: #bbbbbb;
+}
+main section p, main section ul, main section ol {
+  -webkit-margin-after: 3rem;
+  margin-block-end: 3rem;
+  font-size: 1.15em;
+  line-height: 1.9;
+  letter-spacing: 1.8px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -450,7 +406,7 @@ footer {
 .menu_wrapper li .menu_link {
   display: block;
   background-color: inherit;
-  padding: 1rem;
+  padding: 1em;
   font-family: "Share Tech Mono", monospace;
 }
 .menu_wrapper li .menu_link:hover {
@@ -479,7 +435,7 @@ footer {
     width: 100%;
     position: initial;
     top: auto;
-    padding-block: 1rem;
+    padding-block: 1em;
   }
   .navbar .menu_wrapper {
     display: flex;
@@ -494,7 +450,7 @@ footer {
   .navbar .menu_wrapper li {
     width: 10%;
     max-width: 110px;
-    margin-inline: 1rem;
+    margin-inline: 1em;
   }
   .navbar .menu_wrapper li .menu_link {
     display: flex;
@@ -506,11 +462,11 @@ footer {
     fill: #bbbbbb;
   }
   .navbar .menu_wrapper li .menu_link:hover {
-    fill: #aa2abb;
+    fill: #9bbae0;
     background-color: transparent;
   }
   .navbar .menu_wrapper li .menu_link:focus {
-    fill: #aa2abb;
+    fill: #9bbae0;
     background-color: transparent;
   }
   .navbar .menu_wrapper li .menu_link p {
@@ -569,26 +525,6 @@ footer {
 @media only screen and (min-width: 1000px) {
   .menu_btn {
     display: none;
-  }
-}
-.intro_images {
-  width: 100%;
-  max-width: 450px;
-  padding: 1.2em 0.6em;
-  margin: 0.6em auto;
-  background-color: white;
-  color: #000;
-  border-radius: 10px;
-}
-
-.intro_images img {
-  width: 100%;
-}
-
-@media screen and (min-width: 750px) {
-  .intro_images {
-    float: right;
-    margin: 0.6em 0.3em;
   }
 }
 .contact p {
