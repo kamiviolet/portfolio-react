@@ -3,13 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-:root {
-    scroll-behavior: smooth;
-  }
   
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $font-stack-2;
     color: $black;
 }
 
@@ -31,38 +27,34 @@ h2, h3 {
 }
 
 h1 {
-    margin-bottom: 0;
-    margin-block: .5em;
+    margin-block: 1em;
+    font-size: $font-size-xl * 1.25;
+    color: $color-primary-2;
 }
 
 h2 {
-    font-size: 1.65em;
+    font-size: $font-size-xl;
     color: $color-primary-2;
-    margin-bottom: $margin-xl;
+    margin-bottom: $margin-lg;
 
     &:first-of-type {
-        margin-block-start: $margin-xl;
+        margin-block-start: $margin-lg;
     }
 }
 
 h3 {
     font-size: $font-size-lg;
-    padding: .5em;
-    margin-block-end: 2em;
+    padding: $padding-s;
+    margin-block-end: $margin-lg;
     color: $black;
 }
 
-p, ol, ul {
-    font-weight: 300;
-}
-  
 p {
     margin-bottom: 1em;
 }
 
 ul {
     list-style: none;
-    padding: 0;
 }
 
 a {
@@ -78,14 +70,14 @@ a {
 
 strong {
     position: relative;
-    color: black;
+    color: $black;
     line-height: 1.25;
-    background-color: $color-highlight;
+    background-color: $color-highlight-dark;
     border-radius: 5px;
 }
 
 button {
-    padding: 1rem;
+    padding: $base-padding;
     cursor: pointer;
 
     &:hover,
@@ -96,64 +88,57 @@ button {
 
 main {
     grid-row: 3/4;
-    display: grid;
-    align-items: first baseline;
-    justify-items: center;
     width: inherit;
     font-family: $font-stack-4;
+    padding-block-start: $padding-lg;
+    display: grid;
+    justify-content: center;
 
     section {
         max-width: 1200px;
         width: inherit;
-        padding-inline: 2rem;
+        padding-inline: $padding-lg * 2;
         margin-block-end: $margin-xl;
-        color: $color-text;
+        color: $color-text-dark;
+    }
+            
+    p, ul, ol {
+        margin-block-end: $margin-xl;
+        margin-block-start: $margin-xl;
+        font-size: $base-font-size * 1.25;
+        line-height: 1.75;
+        letter-spacing: 2px;
+        color: $color-text-dark;
 
-        &:first-of-type{
-            margin-block-start: $margin-xl;
+        &:first-of-type {
+            margin-block-start: 0;
+            margin-block-end: $margin-xl;
         }
-        
-        p, ul, ol {
-            margin-block-end: 3em;
-        
-            font-size: 1.15em;
-            line-height: 1.9;
-            letter-spacing: 1.8px;
-        }  
+    }  
+}
+
+main.light_theme {
+    h1 {
+        color: $color-primary-0;
+    }
+
+    h2 {
+        color: $color-primary-0;
+    }
+
+    p {
+        color: $color_text_light;
+    }
+
+    .title {
+        color: #107465
     }
 }
-.light ~ main section,
-.light ~ footer,
-.light ~ nav > .menu_wrapper li a,
-.light ~ header,
-.light ~ #error-page,
-.light ~ #development_msg  {
-    color: black;
-}
 
-.light ~ nav {
-    background-color: #9bbae0;
-}
-
-.light ~ nav > .menu_wrapper {
-    background-color: inherit;
-}
-
-.light ~ nav > .menu_wrapper li a:hover {
-    color: #c4500d;
-}
-
-.light ~ main > section h2,
-.light ~ header .name {
-    color: #0f427c;
-}
-
-.light ~ header .title {
-    color: #107465
-}
-
-@media screen and (min-width: 1000px) {
-    main section p, main section ul, main section ol {
-        font-size: 1.35em;
+@media (width > 1024px) {
+    main {
+        p, ul, ol {
+            font-size: $base-font-size * 1.5;
+        }
     }
 }

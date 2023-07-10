@@ -5,7 +5,6 @@ import SOCIAL_MEIDA from '../constants/SocialMedia'
 export default function Contact() {
 
    return (
-    <main> 
       <section className="contact">
          <h2>Find me in</h2>
          <p>I mainly use LinkedIn but you may also find me in Github.</p>
@@ -15,6 +14,5 @@ export default function Contact() {
             })}
          </div>
       </section>
-    </main> 
    ) 
 }

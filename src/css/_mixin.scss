@@ -4,21 +4,3 @@
     justify-content: $halign;
     align-items: $valign;
   }
-
-  
-// @mixin theme-colors($light-theme: true) {
-//   @if $light-theme {
-//     background-color: $light-background;
-//     color: $light-text;
-//   } @else {
-//     background-color: $dark-background;
-//     color: $dark-text;
-//   }
-// }
-
-// .banner {
-//   @include theme-colors($light-theme: true);
-//   body.dark & {
-//     @include theme-colors($light-theme: false);
-//   }
-// }

@@ -6,6 +6,9 @@ import { v4 } from 'uuid'
 export default function ProjectContainer({project}) {
     return (
         <div className="project_container">
+            <div className="project image">
+                <img loading="lazy" src={"projects" + project.images.web} className="thumbnail web_thumbnail"/>
+            </div>
             <div className="project details">
                 <h3>{project.name}</h3>
                 <span role="key">Description:</span><p role="value">{project.description}</p>
@@ -25,9 +28,6 @@ export default function ProjectContainer({project}) {
                         <BsGithub /> <span>Code</span>
                     </Link>
                 </div>
-            </div>
-            <div className="project image">
-                <img loading="lazy" src={"projects" + project.images.web} className="thumbnail web_thumbnail"/>
             </div>
         </div>
     )

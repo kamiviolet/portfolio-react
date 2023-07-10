@@ -19,6 +19,7 @@
         h3 {
             background-color: #5093E3;
             align-self: stretch;
+            margin-block-end: unset;
         }
 
         .icon {
@@ -87,7 +88,7 @@
     }
 }
 
-@media (width > 750px) {
+@media (width > 640px) {
     .project_container {
         grid-template-columns: 1fr 1fr;
     }

@@ -4,7 +4,7 @@ import { images } from '../constants/ImagesForAbout';
 export default function About() {
     
     return (
-        <main role="about_page">
+        <>
             <section className="background">
                 <h2>Background</h2>
                 <p>
@@ -34,6 +34,6 @@ export default function About() {
                     Oh, other than the above, I strive for clean code. I believe we can find a balance between our urge to move forward and a long term sustainability based on strong foundation.
                 </p>
             </section>
-        </main>
+        </>
     )
 }
