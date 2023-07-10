@@ -1,4 +1,4 @@
-export const Thumb = ({ selected, imgSrc, onClick }) => {  
+export const Thumb = ({ selected, imgSrc, onClick, alt }) => {  
     return (
       <div
         className={'embla-thumbs__slide'.concat(
@@ -14,7 +14,7 @@ export const Thumb = ({ selected, imgSrc, onClick }) => {
             loading="lazy"
             className="embla-thumbs__slide__img"
             src={imgSrc}
-            alt="Your alt text"
+            alt={alt}
           />
         </button>
       </div>

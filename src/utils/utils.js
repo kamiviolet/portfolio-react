@@ -25,5 +25,3 @@ export const turnBtnToCross = (e) => {
     e.target.classList.remove('open')
   }
 }
-
-export const imageByIndex = (index, images) => images[index % images.length];

@@ -1,4 +1,4 @@
-.embla {
+  .embla {
     --slide-spacing: 1rem;
     --slide-size: 100%;
     --slide-height-responsive: 19em;
@@ -48,6 +48,12 @@
   }
   
   @media (min-width: 576px) {
+    .self-intro {
+      .embla {
+        margin-block: $margin-lg;
+      }
+    }
+
     .embla {
       margin-block: $margin-xxl * 2;
       

@@ -254,6 +254,9 @@ main section p, main section ul, main section ol {
 }
 
 @media (min-width: 576px) {
+  .self-intro .embla {
+    margin-block: 2em;
+  }
   .embla {
     margin-block: 10em;
   }

@@ -1,10 +1,8 @@
 import { useState, useEffect, useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react';
 import { Thumb } from './CarouselThumbnailBtn';
-import { imageByIndex } from '../utils/utils'
 
 const EmblaCarousel = ({ options, images, thumbnails=false, className="default" }) => {
-  const slides = Array.from(images.keys());
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options)
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
@@ -40,7 +38,7 @@ const EmblaCarousel = ({ options, images, thumbnails=false, className="default" 
       <div className="embla__viewport" ref={emblaMainRef}>
         <div className="embla__container">
           {
-            slides.map((index) => (
+            images.map(({name, path}, index) => (
             <div
               className={
                 className === "default" 
@@ -56,8 +54,8 @@ const EmblaCarousel = ({ options, images, thumbnails=false, className="default" 
                   ? "embla__slide__img"
                   : null
                 }
-                src={imageByIndex(index, images)}
-                alt="Your alt text"
+                src={path}
+                alt={name}
               />
             </div>
             ))
@@ -70,12 +68,13 @@ const EmblaCarousel = ({ options, images, thumbnails=false, className="default" 
           <div className="embla-thumbs">
             <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
               <div className="embla-thumbs__container">
-                {slides.map((index) => (
+                {images.map(({name, path}, index) => (
                   <Thumb
                     onClick={() => onThumbClick(index)}
                     selected={index === selectedIndex}
-                    imgSrc={imageByIndex(index, images)}
+                    imgSrc={path}
                     key={index}
+                    alt={name}
                   />
                 ))}
               </div>

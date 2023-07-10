@@ -4,7 +4,6 @@ import SKILLS from '../constants/Skills'
 import Carousel from "../components/Carousel"
 
 export default function Home() {
-    const images = SKILLS.map(s => s.path)
 
     return (
         <>
@@ -28,7 +27,7 @@ export default function Home() {
                 My current skill set includes:
             </p>
 
-            <Carousel images={images} className="icons" />
+            <Carousel images={SKILLS} className="icons" />
 
             </section>
         </main>

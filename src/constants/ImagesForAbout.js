@@ -9,13 +9,40 @@ import image8 from '/photos/intro_8.jpg'
 import image9 from '/photos/intro_9.jpg'
 
 export const images = [
-    image1,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9
+    {
+        name: "Mongolia, May 2015",
+        path: image1,
+    },
+    {
+        name: "Mongolia, May 2015",
+        path: image2,
+    },
+    {
+        name: "Mongolia, May 2015",
+        path: image3,
+    },
+    {
+        name: "Mongolia, May 2015",
+        path: image4,
+    },
+    {
+        name: "Mongolia, May 2015",
+        path: image5,
+    },
+    {
+        name: "Beijing, May 2015",
+        path: image6,
+    },
+    {
+        name: "Russia, June 2015",
+        path: image7,
+    },
+    {
+        name: "Russia, June 2015",
+        path: image8,
+    },
+    {
+        name: "Russia, June 2015",
+        path: image9,
+    }
 ];
