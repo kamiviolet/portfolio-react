@@ -98,13 +98,14 @@ main section {
   padding-inline: 4em;
   -webkit-margin-after: 3em;
           margin-block-end: 3em;
-  color: #000000;
+  color: #cecccc;
 }
 main p, main ul, main ol {
   -webkit-margin-after: 3em;
           margin-block-end: 3em;
   -webkit-margin-before: 3em;
           margin-block-start: 3em;
+  font-size: 1.25em;
   line-height: 1.75;
   letter-spacing: 2px;
   color: #cecccc;
@@ -125,31 +126,13 @@ main.light_theme h2 {
 main.light_theme p {
   color: #000000;
 }
-
-.light ~ nav {
-  background-color: #9bbae0;
-}
-
-.light ~ nav > .menu_wrapper {
-  background-color: inherit;
-}
-
-.light ~ nav > .menu_wrapper li a:hover {
-  color: #c4500d;
-}
-
-.light ~ main > section h2,
-.light ~ header .name {
-  color: #0f427c;
-}
-
-.light ~ header .title {
+main.light_theme .title {
   color: #107465;
 }
 
-@media screen and (min-width: 1000px) {
-  main section p, main section ul, main section ol {
-    font-size: 1.35em;
+@media (width > 1024px) {
+  main p, main ul, main ol {
+    font-size: 1.5em;
   }
 }
 .sky {
@@ -228,16 +211,6 @@ main.light_theme p {
      object-fit: cover;
 }
 
-.photo_description {
-  position: absolute;
-  background-color: #e4e4e4;
-  padding-left: 0.5em;
-  bottom: 0;
-  width: 100%;
-  box-shadow: 0 10px 0 #5093E3, 0 20px 0 #FFA500;
-  opacity: 0.9;
-}
-
 .embla-thumbs {
   --thumbs-slide-spacing: 0.8rem;
   --thumbs-slide-height: 9rem;
@@ -261,7 +234,7 @@ main.light_theme p {
   position: relative;
 }
 
-@media (min-width: 576px) {
+@media (width > 1024px) {
   .self-intro .embla {
     margin-block: 2em;
   }
@@ -310,6 +283,17 @@ main.light_theme p {
      object-fit: cover;
 }
 
+.photo_description {
+  position: absolute;
+  background-color: #e4e4e4;
+  padding-left: 0.5em;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 10px 0 #5093E3, 0 20px 0 #FFA500;
+  opacity: 0.9;
+  color: #000000;
+}
+
 .header {
   display: grid;
   width: inherit;
@@ -339,7 +323,7 @@ main.light_theme p {
   margin-bottom: unset;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
   .header {
     grid-template-columns: minmax(auto, 500px) auto;
     border-left: 10px solid #aa2abb;
@@ -370,10 +354,8 @@ footer {
   grid-row: 1/2;
   justify-self: last baseline;
   width: inherit;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  display: grid;
+  justify-items: last baseline;
   top: 0;
 }
 
@@ -401,10 +383,7 @@ footer {
   padding: 1em;
   font-family: "Share Tech Mono", monospace;
 }
-.menu_wrapper li .menu_link:hover {
-  background-color: #FFA500;
-}
-.menu_wrapper li .menu_link:focus {
+.menu_wrapper li .menu_link:hover, .menu_wrapper li .menu_link:focus {
   background-color: #FFA500;
 }
 .menu_wrapper li .menu_link .menu_icon {
@@ -422,7 +401,7 @@ footer {
   display: none;
 }
 
-@media only screen and (min-width: 1000px) {
+@media (width > 1024px) {
   .navbar {
     width: 100%;
     position: initial;
@@ -453,11 +432,7 @@ footer {
     padding: initial;
     fill: #adadad;
   }
-  .navbar .menu_wrapper li .menu_link:hover {
-    fill: #9bbae0;
-    background-color: transparent;
-  }
-  .navbar .menu_wrapper li .menu_link:focus {
+  .navbar .menu_wrapper li .menu_link:hover, .navbar .menu_wrapper li .menu_link:focus {
     fill: #9bbae0;
     background-color: transparent;
   }
@@ -475,6 +450,19 @@ footer {
     transform: translateY(-1em);
   }
 }
+.light ~ nav {
+  background-color: #9bbae0;
+}
+.light ~ nav .menu_wrapper {
+  background-color: inherit;
+}
+.light ~ nav .menu_wrapper li a {
+  color: #000000;
+}
+.light ~ nav .menu_wrapper li a:hover {
+  color: #c4500d;
+}
+
 .menu_btn {
   margin: 1.5rem 2rem;
   width: 45px;
@@ -484,7 +472,7 @@ footer {
 }
 
 .bar {
-  background-color: white;
+  background-color: #cecccc;
   border-radius: 2px;
   width: 100%;
   height: 5px;
@@ -510,7 +498,11 @@ footer {
   transform: translate(0, 5px) rotate(-45deg);
 }
 
-@media only screen and (min-width: 1000px) {
+main.light_theme .bar {
+  background-color: #000000;
+}
+
+@media only screen and (min-width: 1024px) {
   .menu_btn {
     display: none;
   }
@@ -563,20 +555,18 @@ footer {
   height: 45px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   .card_wrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 #error-page,
 #development_msg {
-  display: grid;
-  height: 100%;
-  padding-block: 5em;
-  padding-inline: 1em;
-  width: inherit;
+  padding-inline: 2em;
   text-align: center;
   line-height: 2;
+  font-size: unset;
+  transform: translateY(-2em);
 }
 
 .project_container {
@@ -662,7 +652,7 @@ footer {
   background-color: #FFA500;
 }
 
-@media (width > 750px) {
+@media (width > 640px) {
   .project_container {
     grid-template-columns: 1fr 1fr;
   }
@@ -678,7 +668,7 @@ footer {
   display: grid;
 }
 
-@media (width > 1000px) {
+@media (width > 1024px) {
   .skills {
     grid-template-columns: 575px auto;
     gap: 2em;
@@ -706,7 +696,7 @@ footer {
   background-color: #51b6a8;
 }
 
-@media (width > 1000px) {
+@media (width > 1024px) {
   .svgicons_wrapper > div {
     width: 90%;
   }

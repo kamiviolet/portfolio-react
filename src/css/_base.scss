@@ -105,9 +105,10 @@ main {
     p, ul, ol {
         margin-block-end: $margin-xl;
         margin-block-start: $margin-xl;
+        font-size: $base-font-size * 1.25;
         line-height: 1.75;
         letter-spacing: 2px;
-        color: $color-text-light;
+        color: $color-text-dark;
 
         &:first-of-type {
             margin-block-start: 0;
@@ -126,34 +127,18 @@ main.light_theme {
     }
 
     p {
-        color: $color_text_dark;
+        color: $color_text_light;
+    }
+
+    .title {
+        color: #107465
     }
 }
 
-
-.light ~ nav {
-    background-color: #9bbae0;
-}
-
-.light ~ nav > .menu_wrapper {
-    background-color: inherit;
-}
-
-.light ~ nav > .menu_wrapper li a:hover {
-    color: #c4500d;
-}
-
-.light ~ main > section h2,
-.light ~ header .name {
-    color: #0f427c;
-}
-
-.light ~ header .title {
-    color: #107465
-}
-
-@media screen and (min-width: 1000px) {
-    main section p, main section ul, main section ol {
-        font-size: 1.35em;
+@media (width > 1024px) {
+    main {
+        p, ul, ol {
+            font-size: $base-font-size * 1.5;
+        }
     }
 }

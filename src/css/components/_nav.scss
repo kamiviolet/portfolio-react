@@ -2,14 +2,14 @@
   grid-row: 1/2;
   justify-self: last baseline;
   width: inherit;
-  @include flex($halign: flex-end);
+  display: grid;
+  justify-items: last baseline;
   top: 0;
 }
 
 .menu_wrapper {
   position: fixed;
   @include flex($direction: column, $valign: center);
-
   top: 0;
   left: 0;
   width: 100vw;
@@ -26,13 +26,9 @@
         display: block;
         background-color: inherit;
         padding: $base-padding;
-        
         font-family: $font-stack-1;
   
-        &:hover {
-          background-color: $color-highlight-dark;
-        }
-  
+        &:hover,
         &:focus {
           background-color: $color-highlight-dark;
         }
@@ -55,7 +51,7 @@
     display: none;
 }
 
-@media only screen and (min-width: 1000px) {
+@media (width > 1024px) {
     .navbar {
       width: 100%;
       position: initial;
@@ -71,21 +67,15 @@
         li {
           width: 10%;
           max-width: 110px;
-
           margin-inline: $base-margin;
     
           .menu_link {  
             @include flex($direction: column);
             background-color: transparent;
             padding: initial;
-
             fill: $gray;
       
-            &:hover {
-              fill: $color-primary-3;
-              background-color: transparent;
-            }
-      
+            &:hover,
             &:focus {
               fill: $color-primary-3;
               background-color: transparent;
@@ -99,8 +89,7 @@
               display: block;
               width: 45px;
               height: 45px;
-              font-size: 1.75em;
-
+              font-size: $base-font-size * 1.75;
             }
             
           }
@@ -108,8 +97,23 @@
       }
     }
     .theme_toggler {
-
       margin-top: 0;
       transform: translateY(-1em);
     }
   }
+
+.light ~ nav {
+  background-color: $color-primary-3;
+
+  .menu_wrapper {
+      background-color: inherit;
+
+      li a {
+        color: $color-text-light;
+
+        &:hover {
+          color: $color-highlight-light;
+      }
+    }
+  }
+}

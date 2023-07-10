@@ -31,7 +31,7 @@
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
     .header {
         grid-template-columns: minmax(auto, 500px) auto;
         border-left: 10px solid $color-primary-4;

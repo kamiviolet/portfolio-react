@@ -1,10 +1,8 @@
 #error-page,
 #development_msg {
-    display: grid;
-    height: 100%;
-    padding-block: 5em;
-    padding-inline: 1em;
-    width: inherit;
+    padding-inline: $padding-lg;
     text-align: center;
     line-height: 2;
+    font-size: unset;
+    transform: translateY(-2em);
 }
