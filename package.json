@@ -11,6 +11,7 @@
     "git": "vite build --base=/portfolio-react"
   },
   "dependencies": {
+    "embla-carousel-autoplay": "^8.0.0-rc10",
     "embla-carousel-react": "^8.0.0-rc09",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

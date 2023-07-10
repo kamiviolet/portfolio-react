@@ -54,7 +54,6 @@ h3 {
 }
 
 p, ol, ul {
-  font-size: 1em;
   font-weight: 300;
 }
 
@@ -228,6 +227,16 @@ main section p, main section ul, main section ol {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.photo_description {
+  position: absolute;
+  background-color: #e4e4e4;
+  padding-left: 0.5em;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 10px 0 #5093E3, 0 20px 0 #FFA500;
+  opacity: 0.9;
 }
 
 .embla-thumbs {

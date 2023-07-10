@@ -1,13 +1,22 @@
 import { useState, useEffect, useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react';
 import { Thumb } from './CarouselThumbnailBtn';
+import Autoplay from 'embla-carousel-autoplay';
 
-const EmblaCarousel = ({ options, images, thumbnails=false, className="default" }) => {
+const EmblaCarousel = ({
+  options,
+  pluginOptions,
+  images,
+  thumbnails=false,
+  className="default"
+}) => {
   const [selectedIndex, setSelectedIndex] = useState(0)
-  const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options)
+  const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options, [
+    Autoplay(pluginOptions)
+  ])
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
     containScroll: 'keepSnaps',
-    dragFree: true
+    dragFree: true,
   })
 
   const onThumbClick = useCallback(
@@ -57,6 +66,10 @@ const EmblaCarousel = ({ options, images, thumbnails=false, className="default" 
                 src={path}
                 alt={name}
               />
+              {thumbnails
+              ? <p className='photo_description'>{name}</p>
+              : <></>
+              }
             </div>
             ))
           }

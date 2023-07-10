@@ -27,7 +27,7 @@ export default function Home() {
                 My current skill set includes:
             </p>
 
-            <Carousel images={SKILLS} className="icons" />
+            <Carousel options={{loop: true}} pluginOptions={{delay: 1000, stopOnMouseEnter: true}} images={SKILLS} className="icons" />
 
             </section>
         </main>
