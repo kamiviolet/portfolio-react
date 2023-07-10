@@ -45,42 +45,6 @@
     }
 }
 
-.self-intro {
-    font-size: 1.15em;
-
-    .icons_wrapper {
-        height: 120px;
-        width: 100%;
-        position: relative;
-    }
-
-    .icons {
-        height: inherit;
-        width: inherit;
-        display: flex;
-        overflow: hidden;
-    }
-
-    .left,
-    .right {
-        display: block;
-        position: absolute;
-        font-size: 2em;
-        z-index: 2;
-        height: 100%;
-        background-color: #729bd4b4;
-        color: black;
-        cursor: pointer;
-    }
-
-    .left {
-        left: 0
-    }
-    .right {
-        right: 0;
-    }
-}
-
 @media only screen and (min-width: 1000px) {
     .header {
         padding-block-start: 2rem;

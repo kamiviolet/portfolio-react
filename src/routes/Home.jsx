@@ -1,20 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
-import { v4 } from 'uuid'
 import SKILLS from '../constants/Skills'
+import Carousel from "../components/Carousel"
 
 export default function Home() {
-    const sliderRef = useRef(null);
-    const [side, setSide] = useState({
-        direction: '',
-        time: 0
-    })
-    
-    useEffect(()=>{
-        side.direction === 'left'
-        ? sliderRef.current.scrollLeft -= 200
-        : sliderRef.current.scrollLeft += 200
-    }, [side])
+    const images = SKILLS.map(s => s.path)
 
     return (
         <>
@@ -37,13 +27,9 @@ export default function Home() {
             <p>
                 My current skill set includes:
             </p>
-            <div className="icons_wrapper">
-                <BsFillCaretLeftFill className='left' onClick={()=>{setSide({direction: 'left', time: side.time++})}}/>
-                <BsFillCaretRightFill className='right' onClick={()=>{setSide({direction: 'right', time: side.time++})}}/>
-                <div ref={sliderRef} className="icons" >
-                    {SKILLS.map(s => <img key={v4()} src={s.path} alt={s.name} />)}
-                </div>
-            </div>
+
+            <Carousel images={images} className="icons" />
+
             </section>
         </main>
         </>

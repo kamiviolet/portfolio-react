@@ -73,7 +73,11 @@ a:hover, a:focus {
 }
 
 strong {
-  color: #FFA500;
+  position: relative;
+  color: black;
+  line-height: 1.25;
+  background-color: #FFA500;
+  border-radius: 5px;
 }
 
 button {
@@ -137,10 +141,6 @@ main section p, main section ul, main section ol {
   color: #107465;
 }
 
-.light ~ main > section strong {
-  color: #c4500d;
-}
-
 @media screen and (min-width: 1000px) {
   main section p, main section ul, main section ol {
     font-size: 1.35em;
@@ -189,7 +189,6 @@ main section p, main section ul, main section ol {
 .embla {
   --slide-spacing: 1rem;
   --slide-size: 100%;
-  --slide-height-full: 500px;
   --slide-height-responsive: 19em;
   -webkit-padding-after: 2em;
           padding-block-end: 2em;
@@ -200,7 +199,8 @@ main section p, main section ul, main section ol {
 }
 
 .embla__container {
-  height: var(--slide-height-responsive);
+  height: -moz-fit-content;
+  height: fit-content;
   backface-visibility: hidden;
   display: flex;
   touch-action: pan-y;
@@ -246,11 +246,10 @@ main section p, main section ul, main section ol {
 }
 
 @media (min-width: 576px) {
-  .embla__container {
-    height: var(--slide-height-full);
-  }
+  .embla__container,
   .embla__slide__img {
-    height: var(--slide-height-full);
+    height: -moz-max-content;
+    height: max-content;
   }
   .embla-thumbs__slide {
     flex: 0 0 18%;
@@ -327,38 +326,6 @@ main section p, main section ul, main section ol {
   margin-block: 1em;
   margin-bottom: unset;
   font-size: 0.75em;
-}
-
-.self-intro {
-  font-size: 1.15em;
-}
-.self-intro .icons_wrapper {
-  height: 120px;
-  width: 100%;
-  position: relative;
-}
-.self-intro .icons {
-  height: inherit;
-  width: inherit;
-  display: flex;
-  overflow: hidden;
-}
-.self-intro .left,
-.self-intro .right {
-  display: block;
-  position: absolute;
-  font-size: 2em;
-  z-index: 2;
-  height: 100%;
-  background-color: rgba(114, 155, 212, 0.7058823529);
-  color: black;
-  cursor: pointer;
-}
-.self-intro .left {
-  left: 0;
-}
-.self-intro .right {
-  right: 0;
 }
 
 @media only screen and (min-width: 1000px) {

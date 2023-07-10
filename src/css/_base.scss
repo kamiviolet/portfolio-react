@@ -74,7 +74,11 @@ a {
 }
 
 strong {
-    color: $color-highlight;
+    position: relative;
+    color: black;
+    line-height: 1.25;
+    background-color: $color-highlight;
+    border-radius: 5px;
 }
 
 button {
@@ -140,10 +144,6 @@ main {
 
 .light ~ header .title {
     color: #107465
-}
-
-.light ~ main > section strong {
-    color: #c4500d;
 }
 
 @media screen and (min-width: 1000px) {

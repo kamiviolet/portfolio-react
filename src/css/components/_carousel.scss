@@ -1,7 +1,6 @@
 .embla {
     --slide-spacing: 1rem;
     --slide-size: 100%;
-    --slide-height-full: 500px;
     --slide-height-responsive: 19em;
     padding-block-end: 2em;
   }
@@ -9,7 +8,7 @@
     overflow: hidden;
   }
   .embla__container {
-    height: var(--slide-height-responsive);
+    height: fit-content;
     backface-visibility: hidden;
     display: flex;
     touch-action: pan-y;
@@ -47,13 +46,10 @@
     position: relative;
   }
   
-  
   @media (min-width: 576px) {
-    .embla__container {
-      height: var(--slide-height-full);
-    }
+    .embla__container,
     .embla__slide__img {
-      height: var(--slide-height-full);
+      height: max-content;
     }
     .embla-thumbs__slide {
       flex: 0 0 18%;
