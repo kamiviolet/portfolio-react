@@ -25,7 +25,7 @@
         .icon {
             width: 35px;
             height: 35px;
-            margin-inline-end: $base-margin / 2;
+            margin-inline-end: calc($base-margin / 2);
         }
 
         [role="value"],
@@ -39,7 +39,7 @@
             font-weight: 600;
         }
     }
-
+    
     .web_thumbnail {
         object-fit: cover;  
         image-rendering: optimizeSpeed;
