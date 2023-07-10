@@ -36,16 +36,20 @@ h1 {
 }
 
 h2 {
-  font-size: 1.65rem;
+  font-size: 1.65em;
   color: #9abef1;
-  margin-block: 3em;
+  margin-bottom: 3em;
+}
+h2:first-of-type {
+  -webkit-margin-before: 3em;
+          margin-block-start: 3em;
 }
 
 h3 {
   font-size: 1.5em;
   padding: 0.5em;
-  -webkit-margin-after: 2rem;
-          margin-block-end: 2rem;
+  -webkit-margin-after: 2em;
+          margin-block-end: 2em;
   color: #000000;
 }
 
@@ -55,7 +59,7 @@ p, ol, ul {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 ul {
@@ -99,13 +103,18 @@ main {
 main section {
   max-width: 1200px;
   width: inherit;
-  margin-block: 3rem;
   padding-inline: 2rem;
-  color: #adadad;
+  -webkit-margin-after: 3em;
+          margin-block-end: 3em;
+  color: #cecccc;
+}
+main section:first-of-type {
+  -webkit-margin-before: 3em;
+          margin-block-start: 3em;
 }
 main section p, main section ul, main section ol {
   -webkit-margin-after: 3rem;
-  margin-block-end: 3rem;
+  margin-block-end: 3em;
   font-size: 1.15em;
   line-height: 1.9;
   letter-spacing: 1.8px;
@@ -190,8 +199,7 @@ main section p, main section ul, main section ol {
   --slide-spacing: 1rem;
   --slide-size: 100%;
   --slide-height-responsive: 19em;
-  -webkit-padding-after: 2em;
-          padding-block-end: 2em;
+  --margin-block: $margin-xxl;
 }
 
 .embla__viewport {
@@ -246,12 +254,15 @@ main section p, main section ul, main section ol {
 }
 
 @media (min-width: 576px) {
-  .embla__container,
-  .embla__slide__img {
+  .embla {
+    margin-block: 10em;
+  }
+  .embla .embla__container,
+  .embla .embla__slide__img {
     height: -moz-max-content;
     height: max-content;
   }
-  .embla-thumbs__slide {
+  .embla .embla-thumbs__slide {
     flex: 0 0 18%;
   }
 }
@@ -294,10 +305,8 @@ main section p, main section ul, main section ol {
   width: inherit;
   max-width: 1200px;
   font-size: 1.55em;
-  font-family: "Nunito Sans", sans-serif;
-  align-content: center;
-  gap: 2em;
-  color: lightgray;
+  margin-block: 3em 2em;
+  color: #adadad;
   padding-inline: 2rem;
 }
 .header span {
@@ -305,34 +314,32 @@ main section p, main section ul, main section ol {
 }
 .header .name {
   margin-block: 0.15em;
-  color: #729BD4;
+  color: #9bbae0;
 }
 .header .title {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: #5FCEBF;
   font-weight: 800;
+  font-size: 1.5em;
 }
 .header [role=description] {
   display: grid;
   align-self: center;
-  line-height: 1.9;
 }
 .header p {
-  margin-block: 1.75em;
-  font-size: 0.75em;
+  -webkit-margin-after: 1.75em;
+          margin-block-end: 1.75em;
 }
 .header p:first-of-type {
-  margin-block: 1em;
   margin-bottom: unset;
-  font-size: 0.75em;
 }
 
 @media only screen and (min-width: 1000px) {
   .header {
-    -webkit-padding-before: 2rem;
-            padding-block-start: 2rem;
     grid-template-columns: minmax(auto, 500px) auto;
+    border-left: 10px solid #aa2abb;
+    padding-inline: 2em;
   }
   .header [role=description] {
     grid-column: 1/span 2;
@@ -568,7 +575,7 @@ footer {
   padding-inline: 1em;
   width: inherit;
   text-align: center;
-  color: #e4e4e4;
+  color: #cecccc;
   line-height: 2;
 }
 

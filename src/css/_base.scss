@@ -36,15 +36,19 @@ h1 {
 }
 
 h2 {
-    font-size: 1.65rem;
+    font-size: 1.65em;
     color: $color-primary-2;
-    margin-block: $margin-xl;
+    margin-bottom: $margin-xl;
+
+    &:first-of-type {
+        margin-block-start: $margin-xl;
+    }
 }
 
 h3 {
     font-size: $font-size-lg;
     padding: .5em;
-    margin-block-end: 2rem;
+    margin-block-end: 2em;
     color: $black;
 }
 
@@ -54,7 +58,7 @@ p, ol, ul {
 }
   
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 ul {
@@ -102,13 +106,17 @@ main {
     section {
         max-width: 1200px;
         width: inherit;
-        margin-block: 3rem;
         padding-inline: 2rem;
-        color: $gray;
+        margin-block-end: $margin-xl;
+        color: $color-text;
+
+        &:first-of-type{
+            margin-block-start: $margin-xl;
+        }
         
         p, ul, ol {
             -webkit-margin-after: 3rem;
-            margin-block-end: 3rem;
+            margin-block-end: 3em;
         
             font-size: 1.15em;
             line-height: 1.9;

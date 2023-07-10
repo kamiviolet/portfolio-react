@@ -2,8 +2,9 @@
     --slide-spacing: 1rem;
     --slide-size: 100%;
     --slide-height-responsive: 19em;
-    padding-block-end: 2em;
+    --margin-block: $margin-xxl;
   }
+
   .embla__viewport {
     overflow: hidden;
   }
@@ -47,12 +48,16 @@
   }
   
   @media (min-width: 576px) {
-    .embla__container,
-    .embla__slide__img {
-      height: max-content;
-    }
-    .embla-thumbs__slide {
-      flex: 0 0 18%;
+    .embla {
+      margin-block: $margin-xxl * 2;
+      
+      .embla__container,
+      .embla__slide__img {
+        height: max-content;
+      }
+      .embla-thumbs__slide {
+        flex: 0 0 18%;
+      }
     }
   }
   
