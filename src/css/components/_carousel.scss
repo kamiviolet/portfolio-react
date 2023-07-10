@@ -99,7 +99,7 @@
     position: absolute;  
     background-color: $white; 
     padding-left: calc($base-padding / 2);
-    bottom: 0;
+    bottom: $margin-xl;
     width: 100%;
     box-shadow: 0 10px 0 $color-primary-1, 0 20px 0 $color-highlight-dark;
     opacity: .9;

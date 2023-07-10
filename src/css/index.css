@@ -280,7 +280,7 @@ main.light_theme .title {
   position: absolute;
   background-color: #e4e4e4;
   padding-left: 0.5em;
-  bottom: 0;
+  bottom: 3em;
   width: 100%;
   box-shadow: 0 10px 0 #5093E3, 0 20px 0 #FFA500;
   opacity: 0.9;
