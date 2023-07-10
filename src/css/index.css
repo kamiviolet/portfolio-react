@@ -110,7 +110,9 @@ main section p, main section ul, main section ol {
 .light ~ main section,
 .light ~ footer,
 .light ~ nav > .menu_wrapper li a,
-.light ~ header {
+.light ~ header,
+.light ~ #error-page,
+.light ~ #development_msg {
   color: black;
 }
 
