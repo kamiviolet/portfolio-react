@@ -8,8 +8,8 @@ export default function SVGContainer({collection}) {
                 {
                     collection.list.map(icon => {
                         return (
-                            <div className="icons" key={icon.filepath} >
-                                <img loading="lazy" src={icon.filepath} alt={icon.name} />
+                            <div className="icons" key={icon.file} >
+                                <img loading="lazy" src={icon.file} alt={icon.name} />
                             </div>
                         )
                     })
