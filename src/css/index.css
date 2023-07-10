@@ -70,7 +70,7 @@ strong {
   position: relative;
   color: #000000;
   line-height: 1.25;
-  background-color: #FFA500;
+  background-color: rgba(236, 156, 7, 0.8823529412);
   border-radius: 5px;
 }
 
@@ -83,21 +83,23 @@ button:hover, button:focus {
 }
 
 main {
+  display: grid;
+  align-items: first baseline;
+  justify-items: center;
   grid-row: 3/4;
   width: inherit;
   font-family: "Arial narrow", sans-serif;
   -webkit-padding-before: 2em;
           padding-block-start: 2em;
-  display: grid;
   justify-content: center;
 }
 main section {
   max-width: 1200px;
   width: inherit;
-  padding-inline: 0.75em;
   -webkit-margin-after: 3em;
           margin-block-end: 3em;
   color: #cecccc;
+  padding-inline: 2em;
 }
 main p, main ul, main ol {
   margin-block: 3em;
@@ -124,9 +126,6 @@ main.light_theme .title {
 }
 
 @media (width > 1024px) {
-  main section {
-    padding-inline: 4em;
-  }
   main p, main ul, main ol {
     font-size: 1.5em;
   }
@@ -285,16 +284,18 @@ main.light_theme .title {
   padding-left: 0.5em;
   bottom: 3em;
   width: 100%;
-  box-shadow: 0 10px 0 #5093E3, 0 20px 0 #FFA500;
+  box-shadow: 0 10px 0 #5093E3, 0 20px 0 rgba(236, 156, 7, 0.8823529412);
   opacity: 0.9;
   color: #000000;
 }
 
 .header {
   display: grid;
-  margin-block: 5em;
-  margin-inline: 1em;
+  margin-block: 3em;
   color: #adadad;
+  width: 100%;
+  box-sizing: content-box;
+  transform: translateX(2em);
 }
 .header h1 {
   font-size: 3.75em;
@@ -310,23 +311,22 @@ main.light_theme .title {
 @media only screen and (min-width: 1024px) {
   .header {
     border-left: 10px solid #aa2abb;
-    box-sizing: content-box;
-    padding-left: 2em;
-    margin-inline: 4em;
+    padding-left: 4em;
+    transform: translateX(4.5em);
   }
 }
 footer {
   grid-row: 4/5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   width: 100%;
-  align-self: flex-end;
+  min-height: 200px;
   text-align: center;
-  color: white;
-  padding-block: 2rem;
-  font-size: 1em;
-  font-family: "Nunito Sans", sans-serif;
+  color: #cecccc;
+}
+
+.light ~ footer {
+  color: #000000;
 }
 
 .navbar {
@@ -363,7 +363,7 @@ footer {
   font-family: "Share Tech Mono", monospace;
 }
 .menu_wrapper li .menu_link:hover, .menu_wrapper li .menu_link:focus {
-  background-color: #FFA500;
+  background-color: rgba(236, 156, 7, 0.8823529412);
 }
 .menu_wrapper li .menu_link .menu_icon {
   display: none;
@@ -477,7 +477,7 @@ footer {
   transform: translate(0, 5px) rotate(-45deg);
 }
 
-main.light_theme .bar {
+.light ~ nav .bar {
   background-color: #000000;
 }
 
@@ -523,7 +523,7 @@ main.light_theme .bar {
   padding: 1em 2em;
 }
 .contact .card_wrapper .social_media_card:hover, .contact .card_wrapper .social_media_card:focus {
-  background-color: #FFA500;
+  background-color: rgba(236, 156, 7, 0.8823529412);
 }
 .contact .card_wrapper .social_media_card * {
   color: #000000;

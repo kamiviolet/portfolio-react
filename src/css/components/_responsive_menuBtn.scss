@@ -37,9 +37,9 @@
     }
 }
 
-main.light_theme {
+.light ~ nav {
     .bar {
-        background-color: $color-text-light
+        background-color: $color-text-light;
     }
 }
 

@@ -86,19 +86,21 @@ button {
 }
 
 main {
+    display: grid;
+    align-items: first baseline;
+    justify-items: center;
     grid-row: 3/4;
     width: inherit;
     font-family: $font-stack-4;
     padding-block-start: $padding-lg;
-    display: grid;
     justify-content: center;
 
     section {
         max-width: 1200px;
         width: inherit;
-        padding-inline: $padding-s;
         margin-block-end: $margin-xl;
         color: $color-text-dark;
+        padding-inline: $padding-lg;
     }
             
     p, ul, ol {
@@ -134,9 +136,6 @@ main.light_theme {
 
 @media (width > 1024px) {
     main {
-        section {
-            padding-inline: $padding-lg * 2;
-        }
 
         p, ul, ol {
             font-size: $base-font-size * 1.5;

@@ -1,8 +1,10 @@
 .header {
     display: grid;
-    margin-block: $margin-xxl;
-    margin-inline: $base-margin;
+    margin-block: $margin-xl;
     color: $gray;
+    width: 100%;
+    box-sizing: content-box;
+    transform: translateX($padding-lg);
 
     h1 {
         font-size: $font-size-xxl * 1.25;
@@ -20,8 +22,7 @@
 @media only screen and (min-width: 1024px) {
     .header {
         border-left: 10px solid $color-primary-4;
-        box-sizing: content-box;
-        padding-left: $padding-lg;
-        margin-inline: $padding-lg * 2;
+        padding-left: $padding-lg * 2;
+        transform: translateX($padding-lg * 2.25);
     }
 }

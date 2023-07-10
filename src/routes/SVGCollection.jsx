@@ -3,7 +3,6 @@ import svgCollection from "../constants/svgCollection";
 
 export default function SVGCollection () {
     return (
-        <main>
             <section className="section svg_collection">
             <h2>SVG Collections</h2>
             <p>A github repo would be ready soon for download :)</p>
@@ -17,6 +16,5 @@ export default function SVGCollection () {
                 })
             }
             </section>
-        </main>
     );
 }
