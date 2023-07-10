@@ -719,8 +719,8 @@ footer {
   max-width: unset;
 }
 .svg_collection_container .svgicons_wrapper {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
 }
 .svg_collection_container .svgicons_wrapper div {
   display: flex;

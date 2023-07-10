@@ -2,8 +2,8 @@
     max-width: unset;
 
     .svgicons_wrapper {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        justify-items: center;
 
         div {
             display: flex;
