@@ -1,4 +1,3 @@
-import '../css/contact.css'
 import {v4} from 'uuid'
 import SocialMediaCard from '../components/SocialMediaCard'
 import SOCIAL_MEIDA from '../constants/SocialMedia'

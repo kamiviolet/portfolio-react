@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import '../css/header.css'
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
 import { v4 } from 'uuid'
 import SKILLS from '../constants/Skills'

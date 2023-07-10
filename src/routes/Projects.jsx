@@ -1,6 +1,5 @@
 import ProjectContainer from "../components/ProjectContainer"
 import {v4} from 'uuid';
-import "../css/projects.css"
 import PROJECTS from '../constants/Projects.js'
 
 export default function Projects() {

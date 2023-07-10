@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./base";
+
+@import "components/bg";
+@import "components/carousel";
+@import "components/header";
+@import "components/footer";
+@import "components/nav";
+@import "components/responsive_menuBtn";
+@import "components/skill_list";
+
+@import "routes/about";
+@import "routes/contact";
+@import "routes/error-development";
+@import "routes/projects";
+@import "routes/skills";
+@import "routes/svgCollection";

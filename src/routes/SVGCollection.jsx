@@ -1,6 +1,5 @@
 import SVGContainer from "../components/SVGContainer";
 import svgCollection from "../constants/svgCollection";
-import "../css/svgCollection.css";
 
 export default function SVGCollection () {
     return (

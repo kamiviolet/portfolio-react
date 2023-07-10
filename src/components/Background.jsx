@@ -1,4 +1,3 @@
-import '../css/background.css'
 import { useContext,useEffect } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
 

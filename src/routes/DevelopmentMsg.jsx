@@ -1,5 +1,3 @@
-import "../css/error-development.css";
-
 export default function DevelopmentMsg() {
     return (
         <div id="development_msg">

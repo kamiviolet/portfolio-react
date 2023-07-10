@@ -1,5 +1,4 @@
 import {turnBtnToCross} from '../utils/utils'
-import '../css/responsive_menuBtn.css'
 
 export default function ResponsiveMenuBtn() {
     return (
