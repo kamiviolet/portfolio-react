@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react';
 import { Thumb } from './CarouselThumbnailBtn';
 import {images, imageByIndex} from '../constants/ImagesForCarousel';
-import "../css/carousel.css";
 
 const EmblaCarousel = ({ options }) => {
   const slides = Array.from(images.keys());

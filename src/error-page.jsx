@@ -1,6 +1,5 @@
 import { useRouteError } from "react-router-dom";
 import Background from "./components/Background";
-import './css/error-development.css'
 
 
 export default function ErrorPage() {

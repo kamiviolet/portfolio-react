@@ -1,5 +1,4 @@
 import {v4} from 'uuid'
-import "../css/skills.css"
 import SKILLS from '../constants/Skills'
 
 export default function Skills() {

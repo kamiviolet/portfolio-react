@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: 15vh auto auto auto;
+    place-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.light ~ main section,
+.light ~ footer,
+.light ~ nav > .menu_wrapper li a,
+.light ~ header {
+    color: black;
+}
+
+.light ~ nav {
+    background-color: #9bbae0;
+}
+
+.light ~ nav > .menu_wrapper {
+    background-color: inherit;
+}
+
+.light ~ nav > .menu_wrapper li a:hover {
+    color: #c4500d;
+}
+
+.light ~ main > section h2,
+.light ~ header .name {
+    color: #0f427c;
+}
+
+.light ~ header .title {
+    color: #107465
+}
+
+.light ~ main > section strong {
+    color: #c4500d;
+}
+
+main {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: inherit;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 0;
+    margin-block: .5em;
+}
+
+h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.65rem;
+    color: #5093E3;
+    margin-block: 3rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 1.45em;
+    padding-block: .5em;
+    margin-block-end: 2rem;
+    padding-inline: .5em;
+    text-transform: uppercase;
+    color: black;
+    width: 100%;
+}
+
+p, ol, ul {
+    font-size: 1em;
+    font-weight: 300;
+}
+  
+p {
+    margin-bottom: 1rem;
+    text-rendering: optimizeSpeed;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: 400ms;
+}
+
+a:hover {
+    color: #aa2abb;
+}
+
+a:focus {
+    color: #aa2abb;
+}
+
+strong {
+    color: #FFA500;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+main section {
+    max-width: 1200px;
+    width: inherit;
+    margin-block: 3rem;
+    padding-inline: 2rem;
+    color: lightgray;
+}
+
+main section p, main section ul, main section ol {
+    -webkit-margin-after: 3rem;
+    margin-block-end: 3rem;
+
+    font-size: 1.15em;
+    line-height: 1.9;
+    letter-spacing: 1.8px;
+}  
+
+button {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 1000px) {
+    main section p, main section ul, main section ol {
+        font-size: 1.35em;
+    }
+}

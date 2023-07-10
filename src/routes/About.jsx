@@ -1,5 +1,4 @@
 import Carousel from "../components/Carousel"
-import "../css/about.css"
 
 export default function About() {
     
