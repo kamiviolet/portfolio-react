@@ -597,8 +597,7 @@ footer {
 }
 .project_container .btn_wrapper {
   margin-left: 1em;
-  -webkit-padding-before: 1.25em;
-          padding-block-start: 1.25em;
+  padding-block: 1.25em;
   width: 100%;
   max-width: 300px;
   display: flex;
