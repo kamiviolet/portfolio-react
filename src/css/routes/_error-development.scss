@@ -1,6 +1,7 @@
 #error-page,
 #development_msg {
-    padding-inline: $padding-lg;
+    padding: $padding-lg;
+    margin-top: $base-margin;
     text-align: center;
     line-height: 2;
     font-size: unset;
