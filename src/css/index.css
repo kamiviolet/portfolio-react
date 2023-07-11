@@ -481,7 +481,7 @@ footer {
   background-color: #000000;
 }
 
-@media only screen and (min-width: 1024px) {
+@media (width > 1024px) {
   .menu_btn {
     display: none;
   }
@@ -546,6 +546,11 @@ footer {
   line-height: 2;
   font-size: unset;
   transform: translateY(-2em);
+}
+#error-page img,
+#development_msg img {
+  width: 100%;
+  max-width: 350px;
 }
 
 .project_container {

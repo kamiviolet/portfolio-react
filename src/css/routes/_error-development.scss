@@ -5,4 +5,9 @@
     line-height: 2;
     font-size: unset;
     transform: translateY(-2em);
+
+    img {
+        width: 100%;
+        max-width: 350px;
+    }
 }
