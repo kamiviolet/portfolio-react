@@ -134,7 +134,7 @@ main.light_theme {
     }
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
     main {
 
         p, ul, ol {

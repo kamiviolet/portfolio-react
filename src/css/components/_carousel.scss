@@ -47,7 +47,7 @@
     position: relative;
   }
   
-  @media (width > 1024px) {
+  @media (width >= 1024px) {
     .self-intro {
       .embla {
         margin-block: $margin-lg;
