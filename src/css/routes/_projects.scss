@@ -28,14 +28,14 @@
             margin-inline-end: calc($base-margin / 2);
         }
 
-        [role="value"],
-        [role="key"]{
+        .value,
+        .key {
             padding-inline: $base-padding;
             font-family: $font-stack-2;
             padding-top: 1em;
         }
 
-        [role="key"]{
+        .key {
             font-weight: 600;
         }
     }

@@ -11,9 +11,9 @@ export default function ProjectContainer({project}) {
             </div>
             <div className="project details">
                 <h3>{project.name}</h3>
-                <span role="key">Description:</span><span role="value">{project.description}</span>
-                <span role="key">Tools:</span>
-                <div role="value">
+                <span className="key">Description:</span><span className="value">{project.description}</span>
+                <span className="key">Tools:</span>
+                <div className="value">
                     {
                         project.tools.split(', ')
                         .map(t => {

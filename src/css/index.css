@@ -583,13 +583,13 @@ footer {
   -webkit-margin-end: 0.5em;
           margin-inline-end: 0.5em;
 }
-.project_container .details [role=value],
-.project_container .details [role=key] {
+.project_container .details .value,
+.project_container .details .key {
   padding-inline: 1em;
   font-family: "Nunito Sans", sans-serif;
   padding-top: 1em;
 }
-.project_container .details [role=key] {
+.project_container .details .key {
   font-weight: 600;
 }
 .project_container .web_thumbnail {
